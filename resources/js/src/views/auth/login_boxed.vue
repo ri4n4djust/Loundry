@@ -7,7 +7,7 @@
                         <div class="form-content">
                             <div class="media">
                                 <div class="w-img">
-                                    <img src="@/assets/images/pom-bensin.png" class="img-fluid" alt="img-fluid" />
+                                    <img src="@/assets/images/loundry.png" class="img-fluid" alt="img-fluid" />
                                 </div>
                             </div>
                             <h1 class="">Sign In</h1>
