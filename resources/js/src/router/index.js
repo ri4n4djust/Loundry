@@ -24,9 +24,9 @@ const routes = [
     },
 
     {
-        path: '/bbm',
-        name: 'bbm',
-        component: () => import(/* webpackChunkName: "components-tabs" */ '../views/master/indexBbm.vue'),
+        path: '/order',
+        name: 'order',
+        component: () => import(/* webpackChunkName: "components-tabs" */ '../views/master/indexOrder.vue'),
         // meta: { requiresAuth: true },
     },
     //======================COA
@@ -68,19 +68,7 @@ const routes = [
         component: () => import(/* webpackChunkName: "components-tabs" */ '../views/master/indexPelanggan.vue'),
         // meta: { requiresAuth: true },
     },
-    {
-        path: '/transaksi-aplusan',
-        name: 'transaksi-aplusan',
-        component: () => import(/* webpackChunkName: "components-tabs" */ '../views/master/indexNosel.vue'),
-        // meta: { requiresAuth: true },
-    },
-    {
-        path: '/edit-aplusan',
-        name: 'edit-aplusan',
-        component: () => import(/* webpackChunkName: "components-tabs" */ '../views/master/editAplusan.vue'),
-        // meta: { requiresAuth: true },
-        props: true,
-    },
+    
     {
         path: '/barang',
         name: 'barang',
@@ -106,25 +94,20 @@ const routes = [
         // meta: { requiresAuth: true },
     },
 
-    {
-        path: '/nosel',
-        name: 'nosel',
-        component: () => import(/* webpackChunkName: "components-tabs" */ '../views/master/indexNosel.vue'),
-        // meta: { requiresAuth: true },
-        props: true,
-    },
+    
     //================end of master
     // transaksi
+    
     {
-        path: '/po-bbm',
-        name: 'po-bbm',
-        component: () => import(/* webpackChunkName: "components-tabs" */ '../views/transaksi/poBbm.vue'),
+        path: '/new-order',
+        name: 'new-order',
+        component: () => import(/* webpackChunkName: "components-tabs" */ '../views/transaksi/new_order.vue'),
         props: true,
     },
     {
-        path: '/bbm-datang',
-        name: 'bbm-datang',
-        component: () => import(/* webpackChunkName: "components-tabs" */ '../views/transaksi/bbmDatang.vue'),
+        path: '/new-pengambilan',
+        name: 'new-pengambilan',
+        component: () => import(/* webpackChunkName: "components-tabs" */ '../views/transaksi/new_pengambilan.vue'),
         props: true,
     },
     {
@@ -169,13 +152,6 @@ const routes = [
         path: '/opnum-barang',
         name: 'opnum-barang',
         component: () => import(/* webpackChunkName: "components-tabs" */ '../views/transaksi/opnumBarang.vue'),
-        // props: true,
-        // meta: { requiresAuth: true },
-    },
-    {
-        path: '/opnum-bbm',
-        name: 'opnum-bbm',
-        component: () => import(/* webpackChunkName: "components-tabs" */ '../views/transaksi/opnumBbm.vue'),
         // props: true,
         // meta: { requiresAuth: true },
     },
@@ -251,12 +227,7 @@ const routes = [
         component: () => import(/* webpackChunkName: "components-tabs" */ '../views/laporan/laporanOpnum.vue'),
         props: true,
     },
-    {
-        path: '/laporan/tera',
-        name: 'laporan-tera',
-        component: () => import(/* webpackChunkName: "components-tabs" */ '../views/laporan/laporanTera.vue'),
-        props: true,
-    },
+    
     {
         path: '/laporan/labarugi',
         name: 'laporan-labarugi',

@@ -1,6 +1,6 @@
 <template>
-    <!--  BEGIN SIDEBAR  -->
-    <div class="sidebar-wrapper sidebar-theme">
+    <!--  BEGIN SIDEBAR v-if="$store.state.auth.role == 'admin'" -->
+    <div class="sidebar-wrapper sidebar-theme" v-if="$store.getters.StateUser.role == 'admin'" >
         <nav ref="menu" id="sidebar">
             <div class="shadow-bottom"></div>
 
@@ -31,7 +31,7 @@
 
                 <li class="menu">
                     <div class="dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#components" aria-controls="components" aria-expanded="false">
-                        <router-link to="/transaksi-aplusan">
+                        <router-link to="/order">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="24"
@@ -48,36 +48,13 @@
                                 <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
                                 <line x1="12" y1="22.08" x2="12" y2="12"></line>
                             </svg>
-                            <span>Aplusan</span>
+                            <span>ORDER / PENGAMBILAN</span>
                         </router-link>
                             <!-- <span>{{ $t('Barang') }}</span> -->
                     </div>
                 </li>
 
-                <li class="menu">
-                    <div class="dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#components" aria-controls="components" aria-expanded="false">
-                        <router-link to="/bbm">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="feather feather-box"
-                            >
-                                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
-                                <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
-                                <line x1="12" y1="22.08" x2="12" y2="12"></line>
-                            </svg>
-                            <span>BBM</span>
-                        </router-link>
-                            <!-- <span>{{ $t('Barang') }}</span> -->
-                    </div>
-                </li>
+                
 
                 <li class="menu">
                     <div class="dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#components" aria-controls="components" aria-expanded="false">
@@ -98,7 +75,7 @@
                                 <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
                                 <line x1="12" y1="22.08" x2="12" y2="12"></line>
                             </svg>
-                            <span>Barang</span>
+                            <span>PELANGGAN</span>
                         </router-link>
                             <!-- <span>{{ $t('Barang') }}</span> -->
                     </div>
@@ -123,7 +100,7 @@
                                 <polyline points="2 17 12 22 22 17"></polyline>
                                 <polyline points="2 12 12 17 22 12"></polyline>
                             </svg>
-                           <span>Master</span> 
+                           <span>MASTER</span> 
                             <!-- {{ $t('Master') }}</span> -->
                         </div>
                         <div>
@@ -150,9 +127,6 @@
                         </li>
                         <li>
                             <router-link to="/supplier" @click="toggleMobileMenu">Supplier</router-link>
-                        </li>
-                        <li>
-                            <router-link to="/pelanggan" @click="toggleMobileMenu">Pelanggan</router-link>
                         </li>
                         <li>
                             <router-link to="/persediaan" @click="toggleMobileMenu">Persediaan</router-link>
@@ -224,7 +198,7 @@
                                 <line x1="1" y1="9" x2="4" y2="9"></line>
                                 <line x1="1" y1="14" x2="4" y2="14"></line>
                             </svg>
-                            <span>Transaksi</span>
+                            <span>TRANSAKSI</span>
                         </div>
                         <div>
                             <svg

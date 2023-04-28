@@ -25691,10 +25691,20 @@ var _hoisted_25 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 
 var _hoisted_26 = [_hoisted_24, _hoisted_25];
 var _hoisted_27 = {
+  "class": "navbar-item flex-row ms-md-auto"
+};
+var _hoisted_28 = {
+  href: "javascript:;",
+  "class": "d-flex align-items-center"
+};
+var _hoisted_29 = {
+  "class": "ms-2"
+};
+var _hoisted_30 = {
   "class": "dropdown nav-item user-profile-dropdown btn-group"
 };
 
-var _hoisted_28 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+var _hoisted_31 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
   href: "javascript:;",
   id: "ddluser",
   "data-bs-toggle": "dropdown",
@@ -25707,15 +25717,15 @@ var _hoisted_28 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 /* HOISTED */
 );
 
-var _hoisted_29 = {
+var _hoisted_32 = {
   "class": "dropdown-menu dropdown-menu-right",
   "aria-labelledby": "ddluser"
 };
-var _hoisted_30 = {
+var _hoisted_33 = {
   role: "presentation"
 };
 
-var _hoisted_31 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("svg", {
+var _hoisted_34 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("svg", {
   xmlns: "http://www.w3.org/2000/svg",
   width: "24",
   height: "24",
@@ -25736,11 +25746,11 @@ var _hoisted_31 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 /* HOISTED */
 );
 
-var _hoisted_32 = {
+var _hoisted_35 = {
   role: "presentation"
 };
 
-var _hoisted_33 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("svg", {
+var _hoisted_36 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("svg", {
   xmlns: "http://www.w3.org/2000/svg",
   width: "24",
   height: "24",
@@ -25759,11 +25769,11 @@ var _hoisted_33 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 /* HOISTED */
 );
 
-var _hoisted_34 = {
+var _hoisted_37 = {
   role: "presentation"
 };
 
-var _hoisted_35 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("svg", {
+var _hoisted_38 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("svg", {
   xmlns: "http://www.w3.org/2000/svg",
   width: "24",
   height: "24",
@@ -25787,7 +25797,7 @@ var _hoisted_35 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 /* HOISTED */
 );
 
-var _hoisted_36 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("svg", {
+var _hoisted_39 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("svg", {
   xmlns: "http://www.w3.org/2000/svg",
   width: "24",
   height: "24",
@@ -25811,14 +25821,14 @@ var _hoisted_36 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 /* HOISTED */
 );
 
-var _hoisted_37 = {
+var _hoisted_40 = {
   "class": "sub-header-container"
 };
-var _hoisted_38 = {
+var _hoisted_41 = {
   "class": "header navbar navbar-expand-sm"
 };
 
-var _hoisted_39 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("svg", {
+var _hoisted_42 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("svg", {
   xmlns: "http://www.w3.org/2000/svg",
   width: "24",
   height: "24",
@@ -25848,9 +25858,9 @@ var _hoisted_39 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 /* HOISTED */
 );
 
-var _hoisted_40 = [_hoisted_39];
+var _hoisted_43 = [_hoisted_42];
 
-var _hoisted_41 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+var _hoisted_44 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   id: "breadcrumb",
   "class": "vue-portal-target"
 }, null, -1
@@ -25874,7 +25884,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     "class": "nav-link"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" SPBU ")];
+      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Loundry ")];
     }),
     _: 1
     /* STABLE */
@@ -25933,32 +25943,36 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     onClick: _cache[4] || (_cache[4] = function ($event) {
       return $setup.toggleMode('light');
     })
-  }, _hoisted_26)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"dropdown nav-item language-dropdown btn-group\">\n                        <a href=\"javascript:;\" id=\"ddllang\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\" class=\"btn dropdown-toggle btn-icon-only nav-link\">\n                            <img v-if=\"selectedLang\" :src=\"require(`@/assets/images/flags/${selectedLang.code}.png`)\" class=\"flag-width\" alt=\"flag\" />\n                        </a>\n                        <ul class=\"dropdown-menu\" aria-labelledby=\"ddllang\">\n                            <perfect-scrollbar>\n                                <li v-for=\"item in countryList\" :key=\"item.code\">\n                                    <a href=\"javascript:;\" class=\"dropdown-item d-flex align-items-center\" :class=\"{ active: $i18n.locale === item.code }\" @click.prevent=\"changeLanguage(item)\">\n                                        <img :src=\"require(`@/assets/images/flags/${item.code}.png`)\" class=\"flag-width\" alt=\"\" /> <span>{{ item.name }}</span>\n                                    </a>\n                                </li>\n                            </perfect-scrollbar>\n                        </ul>\n                    </div> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"dropdown nav-item message-dropdown btn-group\">\n                        <a href=\"javascript:;\" id=\"ddlmsg\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\" class=\"btn dropdown-toggle btn-icon-only nav-link\">\n                            <svg\n                                xmlns=\"http://www.w3.org/2000/svg\"\n                                width=\"24\"\n                                height=\"24\"\n                                viewBox=\"0 0 24 24\"\n                                fill=\"none\"\n                                stroke=\"currentColor\"\n                                stroke-width=\"2\"\n                                stroke-linecap=\"round\"\n                                stroke-linejoin=\"round\"\n                                class=\"feather feather-mail\"\n                            >\n                                <path d=\"M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z\"></path>\n                                <polyline points=\"22,6 12,13 2,6\"></polyline>\n                            </svg>\n                        </a>\n                        <ul class=\"dropdown-menu dropdown-menu-right\" aria-labelledby=\"ddlmsg\">\n                            <li role=\"presentation\">\n                                <a role=\"menuitem\" href=\"#\" target=\"_self\" class=\"dropdown-item\">\n                                    <div class=\"media media\">\n                                        <div class=\"media-aside align-self-start\">\n                                            <div class=\"avatar avatar-xl\"><span class=\"avatar-title rounded-circle\">KY</span></div>\n                                        </div>\n                                        <div class=\"media-body\">\n                                            <h5 class=\"usr-name\">Kara Young</h5>\n                                            <p class=\"msg-title\">ACCOUNT UPDATE</p>\n                                        </div>\n                                    </div>\n                                </a>\n                            </li>\n                            <li role=\"presentation\">\n                                <a role=\"menuitem\" href=\"#\" target=\"_self\" class=\"dropdown-item\">\n                                    <div class=\"media media\">\n                                        <div class=\"media-aside align-self-start\">\n                                            <img src=\"@/assets/images/profile-15.jpeg\" alt=\"avatar\" />\n                                        </div>\n                                        <div class=\"media-body\">\n                                            <h5 class=\"usr-name\">Daisy Anderson</h5>\n                                            <p class=\"msg-title\">ACCOUNT UPDATE</p>\n                                        </div>\n                                    </div>\n                                </a>\n                            </li>\n                            <li role=\"presentation\">\n                                <a role=\"menuitem\" href=\"#\" target=\"_self\" class=\"dropdown-item\">\n                                    <div class=\"media media\">\n                                        <div class=\"media-aside align-self-start\">\n                                            <div class=\"avatar avatar-xl\"><span class=\"avatar-title rounded-circle\">OG</span></div>\n                                        </div>\n                                        <div class=\"media-body\">\n                                            <h5 class=\"usr-name\">Oscar Garner</h5>\n                                            <p class=\"msg-title\">ACCOUNT UPDATE</p>\n                                        </div>\n                                    </div>\n                                </a>\n                            </li>\n                        </ul>\n                    </div> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"dropdown nav-item notification-dropdown btn-group\">\n                        <a href=\"javascript:;\" id=\"ddlnotify\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\" class=\"btn dropdown-toggle btn-icon-only nav-link\">\n                            <svg\n                                xmlns=\"http://www.w3.org/2000/svg\"\n                                width=\"24\"\n                                height=\"24\"\n                                viewBox=\"0 0 24 24\"\n                                fill=\"none\"\n                                stroke=\"currentColor\"\n                                stroke-width=\"2\"\n                                stroke-linecap=\"round\"\n                                stroke-linejoin=\"round\"\n                                class=\"feather feather-bell\"\n                            >\n                                <path d=\"M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9\"></path>\n                                <path d=\"M13.73 21a2 2 0 0 1-3.46 0\"></path>\n                            </svg>\n                            <span class=\"badge badge-success\"></span>\n                        </a>\n                        <ul class=\"dropdown-menu dropdown-menu-right\" aria-labelledby=\"ddlnotify\">\n                            <li role=\"presentation\">\n                                <a href=\"javascript:;\" class=\"dropdown-item\">\n                                    <div class=\"media server-log\">\n                                        <div class=\"media-aside align-self-start\">\n                                            <svg\n                                                xmlns=\"http://www.w3.org/2000/svg\"\n                                                width=\"24\"\n                                                height=\"24\"\n                                                viewBox=\"0 0 24 24\"\n                                                fill=\"none\"\n                                                stroke=\"currentColor\"\n                                                stroke-width=\"2\"\n                                                stroke-linecap=\"round\"\n                                                stroke-linejoin=\"round\"\n                                                class=\"feather feather-server\"\n                                            >\n                                                <rect x=\"2\" y=\"2\" width=\"20\" height=\"8\" rx=\"2\" ry=\"2\"></rect>\n                                                <rect x=\"2\" y=\"14\" width=\"20\" height=\"8\" rx=\"2\" ry=\"2\"></rect>\n                                                <line x1=\"6\" y1=\"6\" x2=\"6\" y2=\"6\"></line>\n                                                <line x1=\"6\" y1=\"18\" x2=\"6\" y2=\"18\"></line>\n                                            </svg>\n                                        </div>\n                                        <div class=\"media-body\">\n                                            <div class=\"data-info\">\n                                                <h6 class=\"\">Server Rebooted</h6>\n                                                <p class=\"\">45 min ago</p>\n                                            </div>\n\n                                            <div class=\"icon-status\">\n                                                <svg\n                                                    xmlns=\"http://www.w3.org/2000/svg\"\n                                                    width=\"24\"\n                                                    height=\"24\"\n                                                    viewBox=\"0 0 24 24\"\n                                                    fill=\"none\"\n                                                    stroke=\"currentColor\"\n                                                    stroke-width=\"2\"\n                                                    stroke-linecap=\"round\"\n                                                    stroke-linejoin=\"round\"\n                                                    class=\"feather feather-x\"\n                                                >\n                                                    <line x1=\"18\" y1=\"6\" x2=\"6\" y2=\"18\"></line>\n                                                    <line x1=\"6\" y1=\"6\" x2=\"18\" y2=\"18\"></line>\n                                                </svg>\n                                            </div>\n                                        </div>\n                                    </div>\n                                </a>\n                            </li>\n                            <li role=\"presentation\"><hr role=\"separator\" aria-orientation=\"horizontal\" size=\"0\" class=\"dropdown-divider\" /></li>\n                            <li role=\"presentation\">\n                                <a href=\"javascript:;\" class=\"dropdown-item\">\n                                    <div class=\"media\">\n                                        <div class=\"media-aside align-self-start\">\n                                            <svg\n                                                xmlns=\"http://www.w3.org/2000/svg\"\n                                                width=\"24\"\n                                                height=\"24\"\n                                                viewBox=\"0 0 24 24\"\n                                                fill=\"none\"\n                                                stroke=\"currentColor\"\n                                                stroke-width=\"2\"\n                                                stroke-linecap=\"round\"\n                                                stroke-linejoin=\"round\"\n                                                class=\"feather feather-heart\"\n                                            >\n                                                <path\n                                                    d=\"M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z\"\n                                                ></path>\n                                            </svg>\n                                        </div>\n                                        <div class=\"media-body\">\n                                            <div class=\"data-info\">\n                                                <h6>Licence Expiring Soon</h6>\n                                                <p>8 hrs ago</p>\n                                            </div>\n                                            <div class=\"icon-status\">\n                                                <svg\n                                                    xmlns=\"http://www.w3.org/2000/svg\"\n                                                    width=\"24\"\n                                                    height=\"24\"\n                                                    viewBox=\"0 0 24 24\"\n                                                    fill=\"none\"\n                                                    stroke=\"currentColor\"\n                                                    stroke-width=\"2\"\n                                                    stroke-linecap=\"round\"\n                                                    stroke-linejoin=\"round\"\n                                                    class=\"feather feather-x\"\n                                                >\n                                                    <line x1=\"18\" y1=\"6\" x2=\"6\" y2=\"18\"></line>\n                                                    <line x1=\"6\" y1=\"6\" x2=\"18\" y2=\"18\"></line>\n                                                </svg>\n                                            </div>\n                                        </div>\n                                    </div>\n                                </a>\n                            </li>\n                            <li role=\"presentation\"><hr role=\"separator\" aria-orientation=\"horizontal\" size=\"0\" class=\"dropdown-divider\" /></li>\n                            <li role=\"presentation\">\n                                <a href=\"javascript:;\" class=\"dropdown-item\">\n                                    <div class=\"media file-upload\">\n                                        <div class=\"media-aside align-self-start\">\n                                            <svg\n                                                xmlns=\"http://www.w3.org/2000/svg\"\n                                                width=\"24\"\n                                                height=\"24\"\n                                                viewBox=\"0 0 24 24\"\n                                                fill=\"none\"\n                                                stroke=\"currentColor\"\n                                                stroke-width=\"2\"\n                                                stroke-linecap=\"round\"\n                                                stroke-linejoin=\"round\"\n                                                class=\"feather feather-file-text\"\n                                            >\n                                                <path d=\"M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z\"></path>\n                                                <polyline points=\"14 2 14 8 20 8\"></polyline>\n                                                <line x1=\"16\" y1=\"13\" x2=\"8\" y2=\"13\"></line>\n                                                <line x1=\"16\" y1=\"17\" x2=\"8\" y2=\"17\"></line>\n                                                <polyline points=\"10 9 9 9 8 9\"></polyline>\n                                            </svg>\n                                        </div>\n                                        <div class=\"media-body\">\n                                            <div class=\"data-info\">\n                                                <h6>Kelly Portfolio.pdf</h6>\n                                                <p>670 kb</p>\n                                            </div>\n                                            <div class=\"icon-status\">\n                                                <svg\n                                                    xmlns=\"http://www.w3.org/2000/svg\"\n                                                    width=\"24\"\n                                                    height=\"24\"\n                                                    viewBox=\"0 0 24 24\"\n                                                    fill=\"none\"\n                                                    stroke=\"currentColor\"\n                                                    stroke-width=\"2\"\n                                                    stroke-linecap=\"round\"\n                                                    stroke-linejoin=\"round\"\n                                                    class=\"feather feather-check\"\n                                                >\n                                                    <polyline points=\"20 6 9 17 4 12\"></polyline>\n                                                </svg>\n                                            </div>\n                                        </div></div\n                                ></a>\n                            </li>\n                        </ul>\n                    </div> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_27, [_hoisted_28, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", _hoisted_29, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_30, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+  }, _hoisted_26)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_27, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", _hoisted_28, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_29, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$store.getters.StateCabang.nama_cabang), 1
+  /* TEXT */
+  )])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"dropdown nav-item message-dropdown btn-group\">\n                        <a href=\"javascript:;\" id=\"ddlmsg\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\" class=\"btn dropdown-toggle btn-icon-only nav-link\">\n                            <svg\n                                xmlns=\"http://www.w3.org/2000/svg\"\n                                width=\"24\"\n                                height=\"24\"\n                                viewBox=\"0 0 24 24\"\n                                fill=\"none\"\n                                stroke=\"currentColor\"\n                                stroke-width=\"2\"\n                                stroke-linecap=\"round\"\n                                stroke-linejoin=\"round\"\n                                class=\"feather feather-mail\"\n                            >\n                                <path d=\"M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z\"></path>\n                                <polyline points=\"22,6 12,13 2,6\"></polyline>\n                            </svg>\n                        </a>\n                        <ul class=\"dropdown-menu dropdown-menu-right\" aria-labelledby=\"ddlmsg\">\n                            <li role=\"presentation\">\n                                <a role=\"menuitem\" href=\"#\" target=\"_self\" class=\"dropdown-item\">\n                                    <div class=\"media media\">\n                                        <div class=\"media-aside align-self-start\">\n                                            <div class=\"avatar avatar-xl\"><span class=\"avatar-title rounded-circle\">KY</span></div>\n                                        </div>\n                                        <div class=\"media-body\">\n                                            <h5 class=\"usr-name\">Kara Young</h5>\n                                            <p class=\"msg-title\">ACCOUNT UPDATE</p>\n                                        </div>\n                                    </div>\n                                </a>\n                            </li>\n                            <li role=\"presentation\">\n                                <a role=\"menuitem\" href=\"#\" target=\"_self\" class=\"dropdown-item\">\n                                    <div class=\"media media\">\n                                        <div class=\"media-aside align-self-start\">\n                                            <img src=\"@/assets/images/profile-15.jpeg\" alt=\"avatar\" />\n                                        </div>\n                                        <div class=\"media-body\">\n                                            <h5 class=\"usr-name\">Daisy Anderson</h5>\n                                            <p class=\"msg-title\">ACCOUNT UPDATE</p>\n                                        </div>\n                                    </div>\n                                </a>\n                            </li>\n                            <li role=\"presentation\">\n                                <a role=\"menuitem\" href=\"#\" target=\"_self\" class=\"dropdown-item\">\n                                    <div class=\"media media\">\n                                        <div class=\"media-aside align-self-start\">\n                                            <div class=\"avatar avatar-xl\"><span class=\"avatar-title rounded-circle\">OG</span></div>\n                                        </div>\n                                        <div class=\"media-body\">\n                                            <h5 class=\"usr-name\">Oscar Garner</h5>\n                                            <p class=\"msg-title\">ACCOUNT UPDATE</p>\n                                        </div>\n                                    </div>\n                                </a>\n                            </li>\n                        </ul>\n                    </div> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"dropdown nav-item notification-dropdown btn-group\">\n                        <a href=\"javascript:;\" id=\"ddlnotify\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\" class=\"btn dropdown-toggle btn-icon-only nav-link\">\n                            <svg\n                                xmlns=\"http://www.w3.org/2000/svg\"\n                                width=\"24\"\n                                height=\"24\"\n                                viewBox=\"0 0 24 24\"\n                                fill=\"none\"\n                                stroke=\"currentColor\"\n                                stroke-width=\"2\"\n                                stroke-linecap=\"round\"\n                                stroke-linejoin=\"round\"\n                                class=\"feather feather-bell\"\n                            >\n                                <path d=\"M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9\"></path>\n                                <path d=\"M13.73 21a2 2 0 0 1-3.46 0\"></path>\n                            </svg>\n                            <span class=\"badge badge-success\"></span>\n                        </a>\n                        <ul class=\"dropdown-menu dropdown-menu-right\" aria-labelledby=\"ddlnotify\">\n                            <li role=\"presentation\">\n                                <a href=\"javascript:;\" class=\"dropdown-item\">\n                                    <div class=\"media server-log\">\n                                        <div class=\"media-aside align-self-start\">\n                                            <svg\n                                                xmlns=\"http://www.w3.org/2000/svg\"\n                                                width=\"24\"\n                                                height=\"24\"\n                                                viewBox=\"0 0 24 24\"\n                                                fill=\"none\"\n                                                stroke=\"currentColor\"\n                                                stroke-width=\"2\"\n                                                stroke-linecap=\"round\"\n                                                stroke-linejoin=\"round\"\n                                                class=\"feather feather-server\"\n                                            >\n                                                <rect x=\"2\" y=\"2\" width=\"20\" height=\"8\" rx=\"2\" ry=\"2\"></rect>\n                                                <rect x=\"2\" y=\"14\" width=\"20\" height=\"8\" rx=\"2\" ry=\"2\"></rect>\n                                                <line x1=\"6\" y1=\"6\" x2=\"6\" y2=\"6\"></line>\n                                                <line x1=\"6\" y1=\"18\" x2=\"6\" y2=\"18\"></line>\n                                            </svg>\n                                        </div>\n                                        <div class=\"media-body\">\n                                            <div class=\"data-info\">\n                                                <h6 class=\"\">Server Rebooted</h6>\n                                                <p class=\"\">45 min ago</p>\n                                            </div>\n\n                                            <div class=\"icon-status\">\n                                                <svg\n                                                    xmlns=\"http://www.w3.org/2000/svg\"\n                                                    width=\"24\"\n                                                    height=\"24\"\n                                                    viewBox=\"0 0 24 24\"\n                                                    fill=\"none\"\n                                                    stroke=\"currentColor\"\n                                                    stroke-width=\"2\"\n                                                    stroke-linecap=\"round\"\n                                                    stroke-linejoin=\"round\"\n                                                    class=\"feather feather-x\"\n                                                >\n                                                    <line x1=\"18\" y1=\"6\" x2=\"6\" y2=\"18\"></line>\n                                                    <line x1=\"6\" y1=\"6\" x2=\"18\" y2=\"18\"></line>\n                                                </svg>\n                                            </div>\n                                        </div>\n                                    </div>\n                                </a>\n                            </li>\n                            <li role=\"presentation\"><hr role=\"separator\" aria-orientation=\"horizontal\" size=\"0\" class=\"dropdown-divider\" /></li>\n                            <li role=\"presentation\">\n                                <a href=\"javascript:;\" class=\"dropdown-item\">\n                                    <div class=\"media\">\n                                        <div class=\"media-aside align-self-start\">\n                                            <svg\n                                                xmlns=\"http://www.w3.org/2000/svg\"\n                                                width=\"24\"\n                                                height=\"24\"\n                                                viewBox=\"0 0 24 24\"\n                                                fill=\"none\"\n                                                stroke=\"currentColor\"\n                                                stroke-width=\"2\"\n                                                stroke-linecap=\"round\"\n                                                stroke-linejoin=\"round\"\n                                                class=\"feather feather-heart\"\n                                            >\n                                                <path\n                                                    d=\"M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z\"\n                                                ></path>\n                                            </svg>\n                                        </div>\n                                        <div class=\"media-body\">\n                                            <div class=\"data-info\">\n                                                <h6>Licence Expiring Soon</h6>\n                                                <p>8 hrs ago</p>\n                                            </div>\n                                            <div class=\"icon-status\">\n                                                <svg\n                                                    xmlns=\"http://www.w3.org/2000/svg\"\n                                                    width=\"24\"\n                                                    height=\"24\"\n                                                    viewBox=\"0 0 24 24\"\n                                                    fill=\"none\"\n                                                    stroke=\"currentColor\"\n                                                    stroke-width=\"2\"\n                                                    stroke-linecap=\"round\"\n                                                    stroke-linejoin=\"round\"\n                                                    class=\"feather feather-x\"\n                                                >\n                                                    <line x1=\"18\" y1=\"6\" x2=\"6\" y2=\"18\"></line>\n                                                    <line x1=\"6\" y1=\"6\" x2=\"18\" y2=\"18\"></line>\n                                                </svg>\n                                            </div>\n                                        </div>\n                                    </div>\n                                </a>\n                            </li>\n                            <li role=\"presentation\"><hr role=\"separator\" aria-orientation=\"horizontal\" size=\"0\" class=\"dropdown-divider\" /></li>\n                            <li role=\"presentation\">\n                                <a href=\"javascript:;\" class=\"dropdown-item\">\n                                    <div class=\"media file-upload\">\n                                        <div class=\"media-aside align-self-start\">\n                                            <svg\n                                                xmlns=\"http://www.w3.org/2000/svg\"\n                                                width=\"24\"\n                                                height=\"24\"\n                                                viewBox=\"0 0 24 24\"\n                                                fill=\"none\"\n                                                stroke=\"currentColor\"\n                                                stroke-width=\"2\"\n                                                stroke-linecap=\"round\"\n                                                stroke-linejoin=\"round\"\n                                                class=\"feather feather-file-text\"\n                                            >\n                                                <path d=\"M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z\"></path>\n                                                <polyline points=\"14 2 14 8 20 8\"></polyline>\n                                                <line x1=\"16\" y1=\"13\" x2=\"8\" y2=\"13\"></line>\n                                                <line x1=\"16\" y1=\"17\" x2=\"8\" y2=\"17\"></line>\n                                                <polyline points=\"10 9 9 9 8 9\"></polyline>\n                                            </svg>\n                                        </div>\n                                        <div class=\"media-body\">\n                                            <div class=\"data-info\">\n                                                <h6>Kelly Portfolio.pdf</h6>\n                                                <p>670 kb</p>\n                                            </div>\n                                            <div class=\"icon-status\">\n                                                <svg\n                                                    xmlns=\"http://www.w3.org/2000/svg\"\n                                                    width=\"24\"\n                                                    height=\"24\"\n                                                    viewBox=\"0 0 24 24\"\n                                                    fill=\"none\"\n                                                    stroke=\"currentColor\"\n                                                    stroke-width=\"2\"\n                                                    stroke-linecap=\"round\"\n                                                    stroke-linejoin=\"round\"\n                                                    class=\"feather feather-check\"\n                                                >\n                                                    <polyline points=\"20 6 9 17 4 12\"></polyline>\n                                                </svg>\n                                            </div>\n                                        </div></div\n                                ></a>\n                            </li>\n                        </ul>\n                    </div> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_30, [_hoisted_31, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", _hoisted_32, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_33, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
     to: "/users/profile",
     "class": "dropdown-item"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [_hoisted_31, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Profile ")];
+      return [_hoisted_34, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Profile " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$store.getters.StateCabang), 1
+      /* TEXT */
+      )];
     }),
     _: 1
     /* STABLE */
 
-  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_32, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_35, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
     to: "/apps/mailbox",
     "class": "dropdown-item"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [_hoisted_33, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Inbox ")];
+      return [_hoisted_36, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Inbox ")];
     }),
     _: 1
     /* STABLE */
 
-  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_34, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_37, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
     to: "/auth/lockscreen",
     "class": "dropdown-item"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [_hoisted_35, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Lock Screen ")];
+      return [_hoisted_38, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Lock Screen ")];
     }),
     _: 1
     /* STABLE */
@@ -25969,14 +25983,14 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     href: "javascript:void(0);",
     onClick: $setup.logOut,
     "class": "dropdown-item"
-  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <a  @click=\"logOut\" class=\"dropdown-item\"> "), _hoisted_36, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Sign Out "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" </a> ")])])])])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("  END NAVBAR  "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("  BEGIN NAVBAR  "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_37, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("header", _hoisted_38, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <a  @click=\"logOut\" class=\"dropdown-item\"> "), _hoisted_39, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Sign Out "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" </a> ")])])])])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("  END NAVBAR  "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("  BEGIN NAVBAR  "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_40, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("header", _hoisted_41, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
     href: "javascript:void(0);",
     "class": "sidebarCollapse",
     "data-placement": "bottom",
     onClick: _cache[5] || (_cache[5] = function ($event) {
       return _ctx.$store.commit('toggleSideBar', !_ctx.$store.state.is_show_sidebar);
     })
-  }, _hoisted_40), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Portal vue/Teleport for Breadcrumb "), _hoisted_41])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("  END NAVBAR  "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("  BEGIN TOPBAR  "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"topbar-nav header navbar\" role=\"banner\">\n            <nav class=\"topbar\">\n                <ul class=\"list-unstyled menu-categories\" id=\"topAccordion\">\n                    <li class=\"menu single-menu\">\n                        <a href=\"javascript:;\" class=\"dropdown-toggle autodroprown\">\n                            <div class=\"\">\n                                <svg\n                                    xmlns=\"http://www.w3.org/2000/svg\"\n                                    width=\"24\"\n                                    height=\"24\"\n                                    viewBox=\"0 0 24 24\"\n                                    fill=\"none\"\n                                    stroke=\"currentColor\"\n                                    stroke-width=\"2\"\n                                    stroke-linecap=\"round\"\n                                    stroke-linejoin=\"round\"\n                                    class=\"feather feather-home\"\n                                >\n                                    <path d=\"M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z\"></path>\n                                    <polyline points=\"9 22 9 12 15 12 15 22\"></polyline>\n                                </svg>\n                                <span>{{ $t('dashboard') }}</span>\n                            </div>\n                            <svg\n                                xmlns=\"http://www.w3.org/2000/svg\"\n                                width=\"24\"\n                                height=\"24\"\n                                viewBox=\"0 0 24 24\"\n                                fill=\"none\"\n                                stroke=\"currentColor\"\n                                stroke-width=\"2\"\n                                stroke-linecap=\"round\"\n                                stroke-linejoin=\"round\"\n                                class=\"feather feather-chevron-down\"\n                            >\n                                <polyline points=\"6 9 12 15 18 9\"></polyline>\n                            </svg>\n                        </a>\n                        <ul class=\"collapse submenu list-unstyled\">\n                            <li>\n                                <router-link to=\"/\"> {{ $t('sales') }} </router-link>\n                            </li>\n                            <li>\n                                <router-link to=\"/index2\">{{ $t('analytics') }}</router-link>\n                            </li>\n                        </ul>\n                    </li>\n\n                    <li class=\"menu single-menu\">\n                        <a href=\"javascript:;\" class=\"dropdown-toggle\">\n                            <div class=\"\">\n                                <svg\n                                    xmlns=\"http://www.w3.org/2000/svg\"\n                                    width=\"24\"\n                                    height=\"24\"\n                                    viewBox=\"0 0 24 24\"\n                                    fill=\"none\"\n                                    stroke=\"currentColor\"\n                                    stroke-width=\"2\"\n                                    stroke-linecap=\"round\"\n                                    stroke-linejoin=\"round\"\n                                    class=\"feather feather-cpu\"\n                                >\n                                    <rect x=\"4\" y=\"4\" width=\"16\" height=\"16\" rx=\"2\" ry=\"2\"></rect>\n                                    <rect x=\"9\" y=\"9\" width=\"6\" height=\"6\"></rect>\n                                    <line x1=\"9\" y1=\"1\" x2=\"9\" y2=\"4\"></line>\n                                    <line x1=\"15\" y1=\"1\" x2=\"15\" y2=\"4\"></line>\n                                    <line x1=\"9\" y1=\"20\" x2=\"9\" y2=\"23\"></line>\n                                    <line x1=\"15\" y1=\"20\" x2=\"15\" y2=\"23\"></line>\n                                    <line x1=\"20\" y1=\"9\" x2=\"23\" y2=\"9\"></line>\n                                    <line x1=\"20\" y1=\"14\" x2=\"23\" y2=\"14\"></line>\n                                    <line x1=\"1\" y1=\"9\" x2=\"4\" y2=\"9\"></line>\n                                    <line x1=\"1\" y1=\"14\" x2=\"4\" y2=\"14\"></line>\n                                </svg>\n                                <span>{{ $t('apps') }}</span>\n                            </div>\n                            <svg\n                                xmlns=\"http://www.w3.org/2000/svg\"\n                                width=\"24\"\n                                height=\"24\"\n                                viewBox=\"0 0 24 24\"\n                                fill=\"none\"\n                                stroke=\"currentColor\"\n                                stroke-width=\"2\"\n                                stroke-linecap=\"round\"\n                                stroke-linejoin=\"round\"\n                                class=\"feather feather-chevron-down\"\n                            >\n                                <polyline points=\"6 9 12 15 18 9\"></polyline>\n                            </svg>\n                        </a>\n                        <ul class=\"collapse submenu list-unstyled\">\n                            <li><router-link to=\"/apps/chat\">Chat</router-link></li>\n                            <li><router-link to=\"/apps/mailbox\">Mailbox</router-link></li>\n                            <li><router-link to=\"/apps/todo-list\">Todo List</router-link></li>\n                            <li><router-link to=\"/apps/notes\">Notes</router-link></li>\n                            <li><router-link to=\"/apps/scrumboard\">Scrumboard</router-link></li>\n                            <li><router-link to=\"/apps/contacts\">Contacts</router-link></li>\n\n                            <li class=\"sub-sub-submenu-list\">\n                                <a href=\"javascript:;\">\n                                    Invoice\n                                    <svg\n                                        xmlns=\"http://www.w3.org/2000/svg\"\n                                        width=\"24\"\n                                        height=\"24\"\n                                        viewBox=\"0 0 24 24\"\n                                        fill=\"none\"\n                                        stroke=\"currentColor\"\n                                        stroke-width=\"2\"\n                                        stroke-linecap=\"round\"\n                                        stroke-linejoin=\"round\"\n                                        class=\"feather feather-chevron-right\"\n                                    >\n                                        <polyline points=\"9 18 15 12 9 6\"></polyline>\n                                    </svg>\n                                </a>\n                                <ul class=\"collapse list-unstyled sub-submenu\">\n                                    <li><router-link to=\"/apps/invoice/list\">List</router-link></li>\n                                    <li><router-link to=\"/apps/invoice/preview\">Preview</router-link></li>\n                                    <li><router-link to=\"/apps/invoice/add\">Add</router-link></li>\n                                    <li><router-link to=\"/apps/invoice/edit\">Edit</router-link></li>\n                                </ul>\n                            </li>\n                            <li><router-link to=\"/apps/calendar\">Calendar</router-link></li>\n                        </ul>\n                    </li>\n\n                    <li class=\"menu single-menu\">\n                        <a href=\"javascript:;\" class=\"dropdown-toggle\">\n                            <div class=\"\">\n                                <svg\n                                    xmlns=\"http://www.w3.org/2000/svg\"\n                                    width=\"24\"\n                                    height=\"24\"\n                                    viewBox=\"0 0 24 24\"\n                                    fill=\"none\"\n                                    stroke=\"currentColor\"\n                                    stroke-width=\"2\"\n                                    stroke-linecap=\"round\"\n                                    stroke-linejoin=\"round\"\n                                    class=\"feather feather-box\"\n                                >\n                                    <path d=\"M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z\"></path>\n                                    <polyline points=\"3.27 6.96 12 12.01 20.73 6.96\"></polyline>\n                                    <line x1=\"12\" y1=\"22.08\" x2=\"12\" y2=\"12\"></line>\n                                </svg>\n                                <span>{{ $t('components') }}</span>\n                            </div>\n                            <svg\n                                xmlns=\"http://www.w3.org/2000/svg\"\n                                width=\"24\"\n                                height=\"24\"\n                                viewBox=\"0 0 24 24\"\n                                fill=\"none\"\n                                stroke=\"currentColor\"\n                                stroke-width=\"2\"\n                                stroke-linecap=\"round\"\n                                stroke-linejoin=\"round\"\n                                class=\"feather feather-chevron-down\"\n                            >\n                                <polyline points=\"6 9 12 15 18 9\"></polyline>\n                            </svg>\n                        </a>\n                        <ul class=\"collapse submenu list-unstyled\">\n                            <li><router-link to=\"/components/tabs\">Tabs</router-link></li>\n                            <li><router-link to=\"/components/accordions\">Accordions</router-link></li>\n                            <li><router-link to=\"/components/modals\">Modals</router-link></li>\n                            <li><router-link to=\"/components/cards\">Cards</router-link></li>\n                            <li><router-link to=\"/components/carousel\">Carousel</router-link></li>\n                            <li><router-link to=\"/components/countdown\">Countdown</router-link></li>\n                            <li><router-link to=\"/components/counter\">Counter</router-link></li>\n                            <li><router-link to=\"/components/sweetalert\">Sweet Alerts</router-link></li>\n                            <li><router-link to=\"/components/timeline\">Timeline</router-link></li>\n                            <li><router-link to=\"/components/notifications\">Notifications</router-link></li>\n                            <li><router-link to=\"/components/media-object\">Media Object</router-link></li>\n                            <li><router-link to=\"/components/list-group\">List Group</router-link></li>\n                            <li><router-link to=\"/components/pricing-table\">Pricing Tables</router-link></li>\n                            <li><router-link to=\"/components/lightbox\"> Lightbox </router-link></li>\n                        </ul>\n                    </li>\n\n                    <li class=\"menu single-menu\">\n                        <a href=\"javascript:;\" class=\"dropdown-toggle\">\n                            <div class=\"\">\n                                <svg\n                                    xmlns=\"http://www.w3.org/2000/svg\"\n                                    width=\"24\"\n                                    height=\"24\"\n                                    viewBox=\"0 0 24 24\"\n                                    fill=\"none\"\n                                    stroke=\"currentColor\"\n                                    stroke-width=\"2\"\n                                    stroke-linecap=\"round\"\n                                    stroke-linejoin=\"round\"\n                                    class=\"feather feather-zap\"\n                                >\n                                    <polygon points=\"13 2 3 14 12 14 11 22 21 10 12 10 13 2\"></polygon>\n                                </svg>\n                                <span>{{ $t('ui_kit') }}</span>\n                            </div>\n                            <svg\n                                xmlns=\"http://www.w3.org/2000/svg\"\n                                width=\"24\"\n                                height=\"24\"\n                                viewBox=\"0 0 24 24\"\n                                fill=\"none\"\n                                stroke=\"currentColor\"\n                                stroke-width=\"2\"\n                                stroke-linecap=\"round\"\n                                stroke-linejoin=\"round\"\n                                class=\"feather feather-chevron-down\"\n                            >\n                                <polyline points=\"6 9 12 15 18 9\"></polyline>\n                            </svg>\n                        </a>\n                        <ul class=\"collapse submenu list-unstyled\">\n                            <li><router-link to=\"/elements/alerts\">Alerts</router-link></li>\n                            <li><router-link to=\"/elements/avatar\">Avatar</router-link></li>\n                            <li><router-link to=\"/elements/badges\">Badges</router-link></li>\n                            <li><router-link to=\"/elements/breadcrumbs\">Breadcrumbs</router-link></li>\n                            <li><router-link to=\"/elements/buttons\">Buttons</router-link></li>\n                            <li><router-link to=\"/elements/buttons-group\">Button Groups</router-link></li>\n                            <li><router-link to=\"/elements/color-library\">Color Library</router-link></li>\n                            <li><router-link to=\"/elements/dropdown\">Dropdown</router-link></li>\n                            <li><router-link to=\"/elements/infobox\">Infobox</router-link></li>\n                            <li><router-link to=\"/elements/jumbotron\">Jumbotron</router-link></li>\n                            <li><router-link to=\"/elements/loader\">Loader</router-link></li>\n                            <li><router-link to=\"/elements/pagination\">Pagination</router-link></li>\n                            <li><router-link to=\"/elements/popovers\">Popovers</router-link></li>\n                            <li><router-link to=\"/elements/progress-bar\">Progress Bar</router-link></li>\n                            <li><router-link to=\"/elements/search\">Search</router-link></li>\n                            <li><router-link to=\"/elements/tooltips\">Tooltips</router-link></li>\n                            <li><router-link to=\"/elements/treeview\">Treeview</router-link></li>\n                            <li><router-link to=\"/elements/typography\">Typography</router-link></li>\n                        </ul>\n                    </li>\n\n                    <li class=\"menu single-menu\">\n                        <a href=\"javascript:;\" class=\"dropdown-toggle\">\n                            <div class=\"\">\n                                <svg\n                                    xmlns=\"http://www.w3.org/2000/svg\"\n                                    width=\"24\"\n                                    height=\"24\"\n                                    viewBox=\"0 0 24 24\"\n                                    fill=\"none\"\n                                    stroke=\"currentColor\"\n                                    stroke-width=\"2\"\n                                    stroke-linecap=\"round\"\n                                    stroke-linejoin=\"round\"\n                                    class=\"feather feather-layout\"\n                                >\n                                    <rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\" ry=\"2\"></rect>\n                                    <line x1=\"3\" y1=\"9\" x2=\"21\" y2=\"9\"></line>\n                                    <line x1=\"9\" y1=\"21\" x2=\"9\" y2=\"9\"></line>\n                                </svg>\n                                <span>{{ $t('tables') }}</span>\n                            </div>\n                            <svg\n                                xmlns=\"http://www.w3.org/2000/svg\"\n                                width=\"24\"\n                                height=\"24\"\n                                viewBox=\"0 0 24 24\"\n                                fill=\"none\"\n                                stroke=\"currentColor\"\n                                stroke-width=\"2\"\n                                stroke-linecap=\"round\"\n                                stroke-linejoin=\"round\"\n                                class=\"feather feather-chevron-down\"\n                            >\n                                <polyline points=\"6 9 12 15 18 9\"></polyline>\n                            </svg>\n                        </a>\n                        <ul class=\"collapse submenu list-unstyled\">\n                            <li><router-link to=\"/tables/basic\">Basic</router-link></li>\n                            <li class=\"sub-sub-submenu-list\">\n                                <a href=\"javascript:;\" class=\"dropdown-toggle\">\n                                    DataTables\n                                    <svg\n                                        xmlns=\"http://www.w3.org/2000/svg\"\n                                        width=\"24\"\n                                        height=\"24\"\n                                        viewBox=\"0 0 24 24\"\n                                        fill=\"none\"\n                                        stroke=\"currentColor\"\n                                        stroke-width=\"2\"\n                                        stroke-linecap=\"round\"\n                                        stroke-linejoin=\"round\"\n                                        class=\"feather feather-chevron-right\"\n                                    >\n                                        <polyline points=\"9 18 15 12 9 6\"></polyline>\n                                    </svg>\n                                </a>\n                                <ul class=\"collapse list-unstyled sub-submenu\">\n                                    <li><router-link to=\"/tables/basic\">Basic</router-link></li>\n                                    <li><router-link to=\"/tables/striped\">Striped Table</router-link></li>\n                                    <li><router-link to=\"/tables/order-sorting\">Order Sorting</router-link></li>\n                                    <li><router-link to=\"/tables/multi-column\">Multi Column</router-link></li>\n                                    <li><router-link to=\"/tables/multiple-tables\">Multiple Tables</router-link></li>\n                                    <li><router-link to=\"/tables/alt-pagination\">Alt. Pagination</router-link></li>\n                                    <li><router-link to=\"/tables/custom\">Custom</router-link></li>\n                                    <li><router-link to=\"/tables/range-search\">Range Search</router-link></li>\n                                    <li><router-link to=\"/tables/export\">Export</router-link></li>\n                                    <li><router-link to=\"/tables/live-dom-ordering\">Live DOM ordering</router-link></li>\n                                    <li><router-link to=\"/tables/miscellaneous\">Miscellaneous</router-link></li>\n                                </ul>\n                            </li>\n                        </ul>\n                    </li>\n\n                    <li class=\"menu single-menu\">\n                        <a href=\"javascript:;\" class=\"dropdown-toggle\">\n                            <div class=\"\">\n                                <svg\n                                    xmlns=\"http://www.w3.org/2000/svg\"\n                                    width=\"24\"\n                                    height=\"24\"\n                                    viewBox=\"0 0 24 24\"\n                                    fill=\"none\"\n                                    stroke=\"currentColor\"\n                                    stroke-width=\"2\"\n                                    stroke-linecap=\"round\"\n                                    stroke-linejoin=\"round\"\n                                    class=\"feather feather-clipboard\"\n                                >\n                                    <path d=\"M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2\"></path>\n                                    <rect x=\"8\" y=\"2\" width=\"8\" height=\"4\" rx=\"1\" ry=\"1\"></rect>\n                                </svg>\n                                <span>{{ $t('forms') }}</span>\n                            </div>\n                            <svg\n                                xmlns=\"http://www.w3.org/2000/svg\"\n                                width=\"24\"\n                                height=\"24\"\n                                viewBox=\"0 0 24 24\"\n                                fill=\"none\"\n                                stroke=\"currentColor\"\n                                stroke-width=\"2\"\n                                stroke-linecap=\"round\"\n                                stroke-linejoin=\"round\"\n                                class=\"feather feather-chevron-down\"\n                            >\n                                <polyline points=\"6 9 12 15 18 9\"></polyline>\n                            </svg>\n                        </a>\n                        <ul class=\"collapse submenu list-unstyled\">\n                            <li><router-link to=\"/forms/basic\">Basic</router-link></li>\n                            <li><router-link to=\"/forms/input-group\">Input Group</router-link></li>\n                            <li><router-link to=\"/forms/layouts\">Layouts</router-link></li>\n                            <li><router-link to=\"/forms/validation\">Validation</router-link></li>\n                            <li><router-link to=\"/forms/input-mask\">Input Mask</router-link></li>\n                            <li><router-link to=\"/forms/select2\">Select2</router-link></li>\n                            <li><router-link to=\"/forms/touchspin\">TouchSpin</router-link></li>\n                            <li><router-link to=\"/forms/checkbox-radio\">Checkbox &amp; Radio</router-link></li>\n                            <li><router-link to=\"/forms/switches\">Switches</router-link></li>\n                            <li><router-link to=\"/forms/wizards\">Wizards</router-link></li>\n                            <li><router-link to=\"/forms/file-upload\">File Upload</router-link></li>\n                            <li><router-link to=\"/forms/quill-editor\">Quill Editor</router-link></li>\n                            <li><router-link to=\"/forms/markdown-editor\">Markdown Editor</router-link></li>\n                            <li><router-link to=\"/forms/date-picker\">Date &amp; Range Picker </router-link></li>\n                            <li><router-link to=\"/forms/clipboard\">Clipboard</router-link></li>\n                        </ul>\n                    </li>\n\n                    <li class=\"menu single-menu\">\n                        <a href=\"javascript:;\" class=\"dropdown-toggle\">\n                            <div class=\"\">\n                                <svg\n                                    xmlns=\"http://www.w3.org/2000/svg\"\n                                    width=\"24\"\n                                    height=\"24\"\n                                    viewBox=\"0 0 24 24\"\n                                    fill=\"none\"\n                                    stroke=\"currentColor\"\n                                    stroke-width=\"2\"\n                                    stroke-linecap=\"round\"\n                                    stroke-linejoin=\"round\"\n                                    class=\"feather feather-file\"\n                                >\n                                    <path d=\"M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z\"></path>\n                                    <polyline points=\"13 2 13 9 20 9\"></polyline>\n                                </svg>\n                                <span>{{ $t('pages') }}</span>\n                            </div>\n                            <svg\n                                xmlns=\"http://www.w3.org/2000/svg\"\n                                width=\"24\"\n                                height=\"24\"\n                                viewBox=\"0 0 24 24\"\n                                fill=\"none\"\n                                stroke=\"currentColor\"\n                                stroke-width=\"2\"\n                                stroke-linecap=\"round\"\n                                stroke-linejoin=\"round\"\n                                class=\"feather feather-chevron-down\"\n                            >\n                                <polyline points=\"6 9 12 15 18 9\"></polyline>\n                            </svg>\n                        </a>\n                        <ul class=\"collapse submenu list-unstyled\">\n                            <li><router-link to=\"/pages/helpdesk\">Helpdesk</router-link></li>\n                            <li><router-link to=\"/pages/contact-us\">Contact Form</router-link></li>\n                            <li><router-link to=\"/pages/faq\">FAQ</router-link></li>\n                            <li><router-link to=\"/pages/faq2\">FAQ 2</router-link></li>\n                            <li><router-link to=\"/pages/privacy-policy\">Privacy Policy</router-link></li>\n                            <li><a target=\"_blank\" href=\"/pages/coming-soon\">Coming Soon</a></li>\n                            <li><router-link to=\"/pages/blank-page\">Blank Page</router-link></li>\n                            <li><router-link to=\"/pages/sample\">Sample Page</router-link></li>\n\n                            <li><router-link to=\"/users/profile\">Profile</router-link></li>\n                            <li><router-link to=\"/users/account-setting\">Account Settings</router-link></li>\n                            <li class=\"sub-sub-submenu-list\">\n                                <a href=\"javascript:;\" class=\"dropdown-toggle\">\n                                    Error\n                                    <svg\n                                        xmlns=\"http://www.w3.org/2000/svg\"\n                                        width=\"24\"\n                                        height=\"24\"\n                                        viewBox=\"0 0 24 24\"\n                                        fill=\"none\"\n                                        stroke=\"currentColor\"\n                                        stroke-width=\"2\"\n                                        stroke-linecap=\"round\"\n                                        stroke-linejoin=\"round\"\n                                        class=\"feather feather-chevron-right\"\n                                    >\n                                        <polyline points=\"9 18 15 12 9 6\"></polyline>\n                                    </svg>\n                                </a>\n                                <ul class=\"collapse list-unstyled sub-submenu\">\n                                    <li><a target=\"_blank\" href=\"/pages/error404\">404</a></li>\n                                    <li><a target=\"_blank\" href=\"/pages/error500\">500</a></li>\n                                    <li><a target=\"_blank\" href=\"/pages/error503\">503</a></li>\n                                    <li><a target=\"_blank\" href=\"/pages/maintenence\">Maintanence</a></li>\n                                </ul>\n                            </li>\n                            <li class=\"sub-sub-submenu-list\">\n                                <a href=\"javascript:;\" class=\"dropdown-toggle\">\n                                    Login\n                                    <svg\n                                        xmlns=\"http://www.w3.org/2000/svg\"\n                                        width=\"24\"\n                                        height=\"24\"\n                                        viewBox=\"0 0 24 24\"\n                                        fill=\"none\"\n                                        stroke=\"currentColor\"\n                                        stroke-width=\"2\"\n                                        stroke-linecap=\"round\"\n                                        stroke-linejoin=\"round\"\n                                        class=\"feather feather-chevron-right\"\n                                    >\n                                        <polyline points=\"9 18 15 12 9 6\"></polyline>\n                                    </svg>\n                                </a>\n                                <ul class=\"collapse list-unstyled sub-submenu\">\n                                    <li><a target=\"_blank\" href=\"/auth/login\">Login Cover</a></li>\n                                    <li><a target=\"_blank\" href=\"/auth/login-boxed\">Login Boxed</a></li>\n                                </ul>\n                            </li>\n                            <li class=\"sub-sub-submenu-list\">\n                                <a href=\"javascript:;\" class=\"dropdown-toggle\">\n                                    Register\n                                    <svg\n                                        xmlns=\"http://www.w3.org/2000/svg\"\n                                        width=\"24\"\n                                        height=\"24\"\n                                        viewBox=\"0 0 24 24\"\n                                        fill=\"none\"\n                                        stroke=\"currentColor\"\n                                        stroke-width=\"2\"\n                                        stroke-linecap=\"round\"\n                                        stroke-linejoin=\"round\"\n                                        class=\"feather feather-chevron-right\"\n                                    >\n                                        <polyline points=\"9 18 15 12 9 6\"></polyline>\n                                    </svg>\n                                </a>\n                                <ul class=\"collapse list-unstyled sub-submenu\">\n                                    <li><a target=\"_blank\" href=\"/auth/register\">Register Cover</a></li>\n                                    <li><a target=\"_blank\" href=\"/auth/register-boxed\">Register Boxed</a></li>\n                                </ul>\n                            </li>\n\n                            <li class=\"sub-sub-submenu-list\">\n                                <a href=\"javascript:;\" class=\"dropdown-toggle\">\n                                    Password Recovery\n                                    <svg\n                                        xmlns=\"http://www.w3.org/2000/svg\"\n                                        width=\"24\"\n                                        height=\"24\"\n                                        viewBox=\"0 0 24 24\"\n                                        fill=\"none\"\n                                        stroke=\"currentColor\"\n                                        stroke-width=\"2\"\n                                        stroke-linecap=\"round\"\n                                        stroke-linejoin=\"round\"\n                                        class=\"feather feather-chevron-right\"\n                                    >\n                                        <polyline points=\"9 18 15 12 9 6\"></polyline>\n                                    </svg>\n                                </a>\n                                <ul class=\"collapse list-unstyled sub-submenu\">\n                                    <li><a target=\"_blank\" href=\"/auth/pass-recovery\">Recover ID Cover</a></li>\n                                    <li><a target=\"_blank\" href=\"/auth/pass-recovery-boxed\">Recover ID Boxed</a></li>\n                                </ul>\n                            </li>\n\n                            <li class=\"sub-sub-submenu-list\">\n                                <a href=\"javascript:;\" class=\"dropdown-toggle\">\n                                    Lockscreen\n                                    <svg\n                                        xmlns=\"http://www.w3.org/2000/svg\"\n                                        width=\"24\"\n                                        height=\"24\"\n                                        viewBox=\"0 0 24 24\"\n                                        fill=\"none\"\n                                        stroke=\"currentColor\"\n                                        stroke-width=\"2\"\n                                        stroke-linecap=\"round\"\n                                        stroke-linejoin=\"round\"\n                                        class=\"feather feather-chevron-right\"\n                                    >\n                                        <polyline points=\"9 18 15 12 9 6\"></polyline>\n                                    </svg>\n                                </a>\n                                <ul class=\"collapse list-unstyled sub-submenu\">\n                                    <li><a target=\"_blank\" href=\"/auth/lockscreen\">Unlock Cover</a></li>\n                                    <li><a target=\"_blank\" href=\"/auth/lockscreen-boxed\">Unlock Boxed</a></li>\n                                </ul>\n                            </li>\n                        </ul>\n                    </li>\n\n                    <li class=\"menu single-menu\">\n                        <a href=\"javascript:;\" class=\"dropdown-toggle\">\n                            <div class=\"\">\n                                <svg\n                                    xmlns=\"http://www.w3.org/2000/svg\"\n                                    width=\"24\"\n                                    height=\"24\"\n                                    viewBox=\"0 0 24 24\"\n                                    fill=\"none\"\n                                    stroke=\"currentColor\"\n                                    stroke-width=\"2\"\n                                    stroke-linecap=\"round\"\n                                    stroke-linejoin=\"round\"\n                                    class=\"feather feather-plus-circle\"\n                                >\n                                    <circle cx=\"12\" cy=\"12\" r=\"10\"></circle>\n                                    <line x1=\"12\" y1=\"8\" x2=\"12\" y2=\"16\"></line>\n                                    <line x1=\"8\" y1=\"12\" x2=\"16\" y2=\"12\"></line>\n                                </svg>\n                                <span>{{ $t('more') }}</span>\n                            </div>\n                            <svg\n                                xmlns=\"http://www.w3.org/2000/svg\"\n                                width=\"24\"\n                                height=\"24\"\n                                viewBox=\"0 0 24 24\"\n                                fill=\"none\"\n                                stroke=\"currentColor\"\n                                stroke-width=\"2\"\n                                stroke-linecap=\"round\"\n                                stroke-linejoin=\"round\"\n                                class=\"feather feather-chevron-down\"\n                            >\n                                <polyline points=\"6 9 12 15 18 9\"></polyline>\n                            </svg>\n                        </a>\n                        <ul class=\"collapse submenu list-unstyled\">\n                            <li><router-link to=\"/dragndrop\">Drag and Drop</router-link></li>\n                            <li><router-link to=\"/widgets\">Widgets</router-link></li>\n                            <li><router-link to=\"/charts/apex-chart\">Charts</router-link></li>\n                            <li><router-link to=\"/font-icons\">Font Icons</router-link></li>\n                            <li>\n                                <a target=\"_blank\" href=\"https://cork-vue.sbthemes.com\"> Documentation </a>\n                            </li>\n                        </ul>\n                    </li>\n                </ul>\n            </nav>\n        </div> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("  END TOPBAR  ")]);
+  }, _hoisted_43), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Portal vue/Teleport for Breadcrumb "), _hoisted_44])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("  END NAVBAR  "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("  BEGIN TOPBAR  "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"topbar-nav header navbar\" role=\"banner\">\n            <nav class=\"topbar\">\n                <ul class=\"list-unstyled menu-categories\" id=\"topAccordion\">\n                    <li class=\"menu single-menu\">\n                        <a href=\"javascript:;\" class=\"dropdown-toggle autodroprown\">\n                            <div class=\"\">\n                                <svg\n                                    xmlns=\"http://www.w3.org/2000/svg\"\n                                    width=\"24\"\n                                    height=\"24\"\n                                    viewBox=\"0 0 24 24\"\n                                    fill=\"none\"\n                                    stroke=\"currentColor\"\n                                    stroke-width=\"2\"\n                                    stroke-linecap=\"round\"\n                                    stroke-linejoin=\"round\"\n                                    class=\"feather feather-home\"\n                                >\n                                    <path d=\"M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z\"></path>\n                                    <polyline points=\"9 22 9 12 15 12 15 22\"></polyline>\n                                </svg>\n                                <span>{{ $t('dashboard') }}</span>\n                            </div>\n                            <svg\n                                xmlns=\"http://www.w3.org/2000/svg\"\n                                width=\"24\"\n                                height=\"24\"\n                                viewBox=\"0 0 24 24\"\n                                fill=\"none\"\n                                stroke=\"currentColor\"\n                                stroke-width=\"2\"\n                                stroke-linecap=\"round\"\n                                stroke-linejoin=\"round\"\n                                class=\"feather feather-chevron-down\"\n                            >\n                                <polyline points=\"6 9 12 15 18 9\"></polyline>\n                            </svg>\n                        </a>\n                        <ul class=\"collapse submenu list-unstyled\">\n                            <li>\n                                <router-link to=\"/\"> {{ $t('sales') }} </router-link>\n                            </li>\n                            <li>\n                                <router-link to=\"/index2\">{{ $t('analytics') }}</router-link>\n                            </li>\n                        </ul>\n                    </li>\n\n                    <li class=\"menu single-menu\">\n                        <a href=\"javascript:;\" class=\"dropdown-toggle\">\n                            <div class=\"\">\n                                <svg\n                                    xmlns=\"http://www.w3.org/2000/svg\"\n                                    width=\"24\"\n                                    height=\"24\"\n                                    viewBox=\"0 0 24 24\"\n                                    fill=\"none\"\n                                    stroke=\"currentColor\"\n                                    stroke-width=\"2\"\n                                    stroke-linecap=\"round\"\n                                    stroke-linejoin=\"round\"\n                                    class=\"feather feather-cpu\"\n                                >\n                                    <rect x=\"4\" y=\"4\" width=\"16\" height=\"16\" rx=\"2\" ry=\"2\"></rect>\n                                    <rect x=\"9\" y=\"9\" width=\"6\" height=\"6\"></rect>\n                                    <line x1=\"9\" y1=\"1\" x2=\"9\" y2=\"4\"></line>\n                                    <line x1=\"15\" y1=\"1\" x2=\"15\" y2=\"4\"></line>\n                                    <line x1=\"9\" y1=\"20\" x2=\"9\" y2=\"23\"></line>\n                                    <line x1=\"15\" y1=\"20\" x2=\"15\" y2=\"23\"></line>\n                                    <line x1=\"20\" y1=\"9\" x2=\"23\" y2=\"9\"></line>\n                                    <line x1=\"20\" y1=\"14\" x2=\"23\" y2=\"14\"></line>\n                                    <line x1=\"1\" y1=\"9\" x2=\"4\" y2=\"9\"></line>\n                                    <line x1=\"1\" y1=\"14\" x2=\"4\" y2=\"14\"></line>\n                                </svg>\n                                <span>{{ $t('apps') }}</span>\n                            </div>\n                            <svg\n                                xmlns=\"http://www.w3.org/2000/svg\"\n                                width=\"24\"\n                                height=\"24\"\n                                viewBox=\"0 0 24 24\"\n                                fill=\"none\"\n                                stroke=\"currentColor\"\n                                stroke-width=\"2\"\n                                stroke-linecap=\"round\"\n                                stroke-linejoin=\"round\"\n                                class=\"feather feather-chevron-down\"\n                            >\n                                <polyline points=\"6 9 12 15 18 9\"></polyline>\n                            </svg>\n                        </a>\n                        <ul class=\"collapse submenu list-unstyled\">\n                            <li><router-link to=\"/apps/chat\">Chat</router-link></li>\n                            <li><router-link to=\"/apps/mailbox\">Mailbox</router-link></li>\n                            <li><router-link to=\"/apps/todo-list\">Todo List</router-link></li>\n                            <li><router-link to=\"/apps/notes\">Notes</router-link></li>\n                            <li><router-link to=\"/apps/scrumboard\">Scrumboard</router-link></li>\n                            <li><router-link to=\"/apps/contacts\">Contacts</router-link></li>\n\n                            <li class=\"sub-sub-submenu-list\">\n                                <a href=\"javascript:;\">\n                                    Invoice\n                                    <svg\n                                        xmlns=\"http://www.w3.org/2000/svg\"\n                                        width=\"24\"\n                                        height=\"24\"\n                                        viewBox=\"0 0 24 24\"\n                                        fill=\"none\"\n                                        stroke=\"currentColor\"\n                                        stroke-width=\"2\"\n                                        stroke-linecap=\"round\"\n                                        stroke-linejoin=\"round\"\n                                        class=\"feather feather-chevron-right\"\n                                    >\n                                        <polyline points=\"9 18 15 12 9 6\"></polyline>\n                                    </svg>\n                                </a>\n                                <ul class=\"collapse list-unstyled sub-submenu\">\n                                    <li><router-link to=\"/apps/invoice/list\">List</router-link></li>\n                                    <li><router-link to=\"/apps/invoice/preview\">Preview</router-link></li>\n                                    <li><router-link to=\"/apps/invoice/add\">Add</router-link></li>\n                                    <li><router-link to=\"/apps/invoice/edit\">Edit</router-link></li>\n                                </ul>\n                            </li>\n                            <li><router-link to=\"/apps/calendar\">Calendar</router-link></li>\n                        </ul>\n                    </li>\n\n                    <li class=\"menu single-menu\">\n                        <a href=\"javascript:;\" class=\"dropdown-toggle\">\n                            <div class=\"\">\n                                <svg\n                                    xmlns=\"http://www.w3.org/2000/svg\"\n                                    width=\"24\"\n                                    height=\"24\"\n                                    viewBox=\"0 0 24 24\"\n                                    fill=\"none\"\n                                    stroke=\"currentColor\"\n                                    stroke-width=\"2\"\n                                    stroke-linecap=\"round\"\n                                    stroke-linejoin=\"round\"\n                                    class=\"feather feather-box\"\n                                >\n                                    <path d=\"M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z\"></path>\n                                    <polyline points=\"3.27 6.96 12 12.01 20.73 6.96\"></polyline>\n                                    <line x1=\"12\" y1=\"22.08\" x2=\"12\" y2=\"12\"></line>\n                                </svg>\n                                <span>{{ $t('components') }}</span>\n                            </div>\n                            <svg\n                                xmlns=\"http://www.w3.org/2000/svg\"\n                                width=\"24\"\n                                height=\"24\"\n                                viewBox=\"0 0 24 24\"\n                                fill=\"none\"\n                                stroke=\"currentColor\"\n                                stroke-width=\"2\"\n                                stroke-linecap=\"round\"\n                                stroke-linejoin=\"round\"\n                                class=\"feather feather-chevron-down\"\n                            >\n                                <polyline points=\"6 9 12 15 18 9\"></polyline>\n                            </svg>\n                        </a>\n                        <ul class=\"collapse submenu list-unstyled\">\n                            <li><router-link to=\"/components/tabs\">Tabs</router-link></li>\n                            <li><router-link to=\"/components/accordions\">Accordions</router-link></li>\n                            <li><router-link to=\"/components/modals\">Modals</router-link></li>\n                            <li><router-link to=\"/components/cards\">Cards</router-link></li>\n                            <li><router-link to=\"/components/carousel\">Carousel</router-link></li>\n                            <li><router-link to=\"/components/countdown\">Countdown</router-link></li>\n                            <li><router-link to=\"/components/counter\">Counter</router-link></li>\n                            <li><router-link to=\"/components/sweetalert\">Sweet Alerts</router-link></li>\n                            <li><router-link to=\"/components/timeline\">Timeline</router-link></li>\n                            <li><router-link to=\"/components/notifications\">Notifications</router-link></li>\n                            <li><router-link to=\"/components/media-object\">Media Object</router-link></li>\n                            <li><router-link to=\"/components/list-group\">List Group</router-link></li>\n                            <li><router-link to=\"/components/pricing-table\">Pricing Tables</router-link></li>\n                            <li><router-link to=\"/components/lightbox\"> Lightbox </router-link></li>\n                        </ul>\n                    </li>\n\n                    <li class=\"menu single-menu\">\n                        <a href=\"javascript:;\" class=\"dropdown-toggle\">\n                            <div class=\"\">\n                                <svg\n                                    xmlns=\"http://www.w3.org/2000/svg\"\n                                    width=\"24\"\n                                    height=\"24\"\n                                    viewBox=\"0 0 24 24\"\n                                    fill=\"none\"\n                                    stroke=\"currentColor\"\n                                    stroke-width=\"2\"\n                                    stroke-linecap=\"round\"\n                                    stroke-linejoin=\"round\"\n                                    class=\"feather feather-zap\"\n                                >\n                                    <polygon points=\"13 2 3 14 12 14 11 22 21 10 12 10 13 2\"></polygon>\n                                </svg>\n                                <span>{{ $t('ui_kit') }}</span>\n                            </div>\n                            <svg\n                                xmlns=\"http://www.w3.org/2000/svg\"\n                                width=\"24\"\n                                height=\"24\"\n                                viewBox=\"0 0 24 24\"\n                                fill=\"none\"\n                                stroke=\"currentColor\"\n                                stroke-width=\"2\"\n                                stroke-linecap=\"round\"\n                                stroke-linejoin=\"round\"\n                                class=\"feather feather-chevron-down\"\n                            >\n                                <polyline points=\"6 9 12 15 18 9\"></polyline>\n                            </svg>\n                        </a>\n                        <ul class=\"collapse submenu list-unstyled\">\n                            <li><router-link to=\"/elements/alerts\">Alerts</router-link></li>\n                            <li><router-link to=\"/elements/avatar\">Avatar</router-link></li>\n                            <li><router-link to=\"/elements/badges\">Badges</router-link></li>\n                            <li><router-link to=\"/elements/breadcrumbs\">Breadcrumbs</router-link></li>\n                            <li><router-link to=\"/elements/buttons\">Buttons</router-link></li>\n                            <li><router-link to=\"/elements/buttons-group\">Button Groups</router-link></li>\n                            <li><router-link to=\"/elements/color-library\">Color Library</router-link></li>\n                            <li><router-link to=\"/elements/dropdown\">Dropdown</router-link></li>\n                            <li><router-link to=\"/elements/infobox\">Infobox</router-link></li>\n                            <li><router-link to=\"/elements/jumbotron\">Jumbotron</router-link></li>\n                            <li><router-link to=\"/elements/loader\">Loader</router-link></li>\n                            <li><router-link to=\"/elements/pagination\">Pagination</router-link></li>\n                            <li><router-link to=\"/elements/popovers\">Popovers</router-link></li>\n                            <li><router-link to=\"/elements/progress-bar\">Progress Bar</router-link></li>\n                            <li><router-link to=\"/elements/search\">Search</router-link></li>\n                            <li><router-link to=\"/elements/tooltips\">Tooltips</router-link></li>\n                            <li><router-link to=\"/elements/treeview\">Treeview</router-link></li>\n                            <li><router-link to=\"/elements/typography\">Typography</router-link></li>\n                        </ul>\n                    </li>\n\n                    <li class=\"menu single-menu\">\n                        <a href=\"javascript:;\" class=\"dropdown-toggle\">\n                            <div class=\"\">\n                                <svg\n                                    xmlns=\"http://www.w3.org/2000/svg\"\n                                    width=\"24\"\n                                    height=\"24\"\n                                    viewBox=\"0 0 24 24\"\n                                    fill=\"none\"\n                                    stroke=\"currentColor\"\n                                    stroke-width=\"2\"\n                                    stroke-linecap=\"round\"\n                                    stroke-linejoin=\"round\"\n                                    class=\"feather feather-layout\"\n                                >\n                                    <rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\" ry=\"2\"></rect>\n                                    <line x1=\"3\" y1=\"9\" x2=\"21\" y2=\"9\"></line>\n                                    <line x1=\"9\" y1=\"21\" x2=\"9\" y2=\"9\"></line>\n                                </svg>\n                                <span>{{ $t('tables') }}</span>\n                            </div>\n                            <svg\n                                xmlns=\"http://www.w3.org/2000/svg\"\n                                width=\"24\"\n                                height=\"24\"\n                                viewBox=\"0 0 24 24\"\n                                fill=\"none\"\n                                stroke=\"currentColor\"\n                                stroke-width=\"2\"\n                                stroke-linecap=\"round\"\n                                stroke-linejoin=\"round\"\n                                class=\"feather feather-chevron-down\"\n                            >\n                                <polyline points=\"6 9 12 15 18 9\"></polyline>\n                            </svg>\n                        </a>\n                        <ul class=\"collapse submenu list-unstyled\">\n                            <li><router-link to=\"/tables/basic\">Basic</router-link></li>\n                            <li class=\"sub-sub-submenu-list\">\n                                <a href=\"javascript:;\" class=\"dropdown-toggle\">\n                                    DataTables\n                                    <svg\n                                        xmlns=\"http://www.w3.org/2000/svg\"\n                                        width=\"24\"\n                                        height=\"24\"\n                                        viewBox=\"0 0 24 24\"\n                                        fill=\"none\"\n                                        stroke=\"currentColor\"\n                                        stroke-width=\"2\"\n                                        stroke-linecap=\"round\"\n                                        stroke-linejoin=\"round\"\n                                        class=\"feather feather-chevron-right\"\n                                    >\n                                        <polyline points=\"9 18 15 12 9 6\"></polyline>\n                                    </svg>\n                                </a>\n                                <ul class=\"collapse list-unstyled sub-submenu\">\n                                    <li><router-link to=\"/tables/basic\">Basic</router-link></li>\n                                    <li><router-link to=\"/tables/striped\">Striped Table</router-link></li>\n                                    <li><router-link to=\"/tables/order-sorting\">Order Sorting</router-link></li>\n                                    <li><router-link to=\"/tables/multi-column\">Multi Column</router-link></li>\n                                    <li><router-link to=\"/tables/multiple-tables\">Multiple Tables</router-link></li>\n                                    <li><router-link to=\"/tables/alt-pagination\">Alt. Pagination</router-link></li>\n                                    <li><router-link to=\"/tables/custom\">Custom</router-link></li>\n                                    <li><router-link to=\"/tables/range-search\">Range Search</router-link></li>\n                                    <li><router-link to=\"/tables/export\">Export</router-link></li>\n                                    <li><router-link to=\"/tables/live-dom-ordering\">Live DOM ordering</router-link></li>\n                                    <li><router-link to=\"/tables/miscellaneous\">Miscellaneous</router-link></li>\n                                </ul>\n                            </li>\n                        </ul>\n                    </li>\n\n                    <li class=\"menu single-menu\">\n                        <a href=\"javascript:;\" class=\"dropdown-toggle\">\n                            <div class=\"\">\n                                <svg\n                                    xmlns=\"http://www.w3.org/2000/svg\"\n                                    width=\"24\"\n                                    height=\"24\"\n                                    viewBox=\"0 0 24 24\"\n                                    fill=\"none\"\n                                    stroke=\"currentColor\"\n                                    stroke-width=\"2\"\n                                    stroke-linecap=\"round\"\n                                    stroke-linejoin=\"round\"\n                                    class=\"feather feather-clipboard\"\n                                >\n                                    <path d=\"M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2\"></path>\n                                    <rect x=\"8\" y=\"2\" width=\"8\" height=\"4\" rx=\"1\" ry=\"1\"></rect>\n                                </svg>\n                                <span>{{ $t('forms') }}</span>\n                            </div>\n                            <svg\n                                xmlns=\"http://www.w3.org/2000/svg\"\n                                width=\"24\"\n                                height=\"24\"\n                                viewBox=\"0 0 24 24\"\n                                fill=\"none\"\n                                stroke=\"currentColor\"\n                                stroke-width=\"2\"\n                                stroke-linecap=\"round\"\n                                stroke-linejoin=\"round\"\n                                class=\"feather feather-chevron-down\"\n                            >\n                                <polyline points=\"6 9 12 15 18 9\"></polyline>\n                            </svg>\n                        </a>\n                        <ul class=\"collapse submenu list-unstyled\">\n                            <li><router-link to=\"/forms/basic\">Basic</router-link></li>\n                            <li><router-link to=\"/forms/input-group\">Input Group</router-link></li>\n                            <li><router-link to=\"/forms/layouts\">Layouts</router-link></li>\n                            <li><router-link to=\"/forms/validation\">Validation</router-link></li>\n                            <li><router-link to=\"/forms/input-mask\">Input Mask</router-link></li>\n                            <li><router-link to=\"/forms/select2\">Select2</router-link></li>\n                            <li><router-link to=\"/forms/touchspin\">TouchSpin</router-link></li>\n                            <li><router-link to=\"/forms/checkbox-radio\">Checkbox &amp; Radio</router-link></li>\n                            <li><router-link to=\"/forms/switches\">Switches</router-link></li>\n                            <li><router-link to=\"/forms/wizards\">Wizards</router-link></li>\n                            <li><router-link to=\"/forms/file-upload\">File Upload</router-link></li>\n                            <li><router-link to=\"/forms/quill-editor\">Quill Editor</router-link></li>\n                            <li><router-link to=\"/forms/markdown-editor\">Markdown Editor</router-link></li>\n                            <li><router-link to=\"/forms/date-picker\">Date &amp; Range Picker </router-link></li>\n                            <li><router-link to=\"/forms/clipboard\">Clipboard</router-link></li>\n                        </ul>\n                    </li>\n\n                    <li class=\"menu single-menu\">\n                        <a href=\"javascript:;\" class=\"dropdown-toggle\">\n                            <div class=\"\">\n                                <svg\n                                    xmlns=\"http://www.w3.org/2000/svg\"\n                                    width=\"24\"\n                                    height=\"24\"\n                                    viewBox=\"0 0 24 24\"\n                                    fill=\"none\"\n                                    stroke=\"currentColor\"\n                                    stroke-width=\"2\"\n                                    stroke-linecap=\"round\"\n                                    stroke-linejoin=\"round\"\n                                    class=\"feather feather-file\"\n                                >\n                                    <path d=\"M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z\"></path>\n                                    <polyline points=\"13 2 13 9 20 9\"></polyline>\n                                </svg>\n                                <span>{{ $t('pages') }}</span>\n                            </div>\n                            <svg\n                                xmlns=\"http://www.w3.org/2000/svg\"\n                                width=\"24\"\n                                height=\"24\"\n                                viewBox=\"0 0 24 24\"\n                                fill=\"none\"\n                                stroke=\"currentColor\"\n                                stroke-width=\"2\"\n                                stroke-linecap=\"round\"\n                                stroke-linejoin=\"round\"\n                                class=\"feather feather-chevron-down\"\n                            >\n                                <polyline points=\"6 9 12 15 18 9\"></polyline>\n                            </svg>\n                        </a>\n                        <ul class=\"collapse submenu list-unstyled\">\n                            <li><router-link to=\"/pages/helpdesk\">Helpdesk</router-link></li>\n                            <li><router-link to=\"/pages/contact-us\">Contact Form</router-link></li>\n                            <li><router-link to=\"/pages/faq\">FAQ</router-link></li>\n                            <li><router-link to=\"/pages/faq2\">FAQ 2</router-link></li>\n                            <li><router-link to=\"/pages/privacy-policy\">Privacy Policy</router-link></li>\n                            <li><a target=\"_blank\" href=\"/pages/coming-soon\">Coming Soon</a></li>\n                            <li><router-link to=\"/pages/blank-page\">Blank Page</router-link></li>\n                            <li><router-link to=\"/pages/sample\">Sample Page</router-link></li>\n\n                            <li><router-link to=\"/users/profile\">Profile</router-link></li>\n                            <li><router-link to=\"/users/account-setting\">Account Settings</router-link></li>\n                            <li class=\"sub-sub-submenu-list\">\n                                <a href=\"javascript:;\" class=\"dropdown-toggle\">\n                                    Error\n                                    <svg\n                                        xmlns=\"http://www.w3.org/2000/svg\"\n                                        width=\"24\"\n                                        height=\"24\"\n                                        viewBox=\"0 0 24 24\"\n                                        fill=\"none\"\n                                        stroke=\"currentColor\"\n                                        stroke-width=\"2\"\n                                        stroke-linecap=\"round\"\n                                        stroke-linejoin=\"round\"\n                                        class=\"feather feather-chevron-right\"\n                                    >\n                                        <polyline points=\"9 18 15 12 9 6\"></polyline>\n                                    </svg>\n                                </a>\n                                <ul class=\"collapse list-unstyled sub-submenu\">\n                                    <li><a target=\"_blank\" href=\"/pages/error404\">404</a></li>\n                                    <li><a target=\"_blank\" href=\"/pages/error500\">500</a></li>\n                                    <li><a target=\"_blank\" href=\"/pages/error503\">503</a></li>\n                                    <li><a target=\"_blank\" href=\"/pages/maintenence\">Maintanence</a></li>\n                                </ul>\n                            </li>\n                            <li class=\"sub-sub-submenu-list\">\n                                <a href=\"javascript:;\" class=\"dropdown-toggle\">\n                                    Login\n                                    <svg\n                                        xmlns=\"http://www.w3.org/2000/svg\"\n                                        width=\"24\"\n                                        height=\"24\"\n                                        viewBox=\"0 0 24 24\"\n                                        fill=\"none\"\n                                        stroke=\"currentColor\"\n                                        stroke-width=\"2\"\n                                        stroke-linecap=\"round\"\n                                        stroke-linejoin=\"round\"\n                                        class=\"feather feather-chevron-right\"\n                                    >\n                                        <polyline points=\"9 18 15 12 9 6\"></polyline>\n                                    </svg>\n                                </a>\n                                <ul class=\"collapse list-unstyled sub-submenu\">\n                                    <li><a target=\"_blank\" href=\"/auth/login\">Login Cover</a></li>\n                                    <li><a target=\"_blank\" href=\"/auth/login-boxed\">Login Boxed</a></li>\n                                </ul>\n                            </li>\n                            <li class=\"sub-sub-submenu-list\">\n                                <a href=\"javascript:;\" class=\"dropdown-toggle\">\n                                    Register\n                                    <svg\n                                        xmlns=\"http://www.w3.org/2000/svg\"\n                                        width=\"24\"\n                                        height=\"24\"\n                                        viewBox=\"0 0 24 24\"\n                                        fill=\"none\"\n                                        stroke=\"currentColor\"\n                                        stroke-width=\"2\"\n                                        stroke-linecap=\"round\"\n                                        stroke-linejoin=\"round\"\n                                        class=\"feather feather-chevron-right\"\n                                    >\n                                        <polyline points=\"9 18 15 12 9 6\"></polyline>\n                                    </svg>\n                                </a>\n                                <ul class=\"collapse list-unstyled sub-submenu\">\n                                    <li><a target=\"_blank\" href=\"/auth/register\">Register Cover</a></li>\n                                    <li><a target=\"_blank\" href=\"/auth/register-boxed\">Register Boxed</a></li>\n                                </ul>\n                            </li>\n\n                            <li class=\"sub-sub-submenu-list\">\n                                <a href=\"javascript:;\" class=\"dropdown-toggle\">\n                                    Password Recovery\n                                    <svg\n                                        xmlns=\"http://www.w3.org/2000/svg\"\n                                        width=\"24\"\n                                        height=\"24\"\n                                        viewBox=\"0 0 24 24\"\n                                        fill=\"none\"\n                                        stroke=\"currentColor\"\n                                        stroke-width=\"2\"\n                                        stroke-linecap=\"round\"\n                                        stroke-linejoin=\"round\"\n                                        class=\"feather feather-chevron-right\"\n                                    >\n                                        <polyline points=\"9 18 15 12 9 6\"></polyline>\n                                    </svg>\n                                </a>\n                                <ul class=\"collapse list-unstyled sub-submenu\">\n                                    <li><a target=\"_blank\" href=\"/auth/pass-recovery\">Recover ID Cover</a></li>\n                                    <li><a target=\"_blank\" href=\"/auth/pass-recovery-boxed\">Recover ID Boxed</a></li>\n                                </ul>\n                            </li>\n\n                            <li class=\"sub-sub-submenu-list\">\n                                <a href=\"javascript:;\" class=\"dropdown-toggle\">\n                                    Lockscreen\n                                    <svg\n                                        xmlns=\"http://www.w3.org/2000/svg\"\n                                        width=\"24\"\n                                        height=\"24\"\n                                        viewBox=\"0 0 24 24\"\n                                        fill=\"none\"\n                                        stroke=\"currentColor\"\n                                        stroke-width=\"2\"\n                                        stroke-linecap=\"round\"\n                                        stroke-linejoin=\"round\"\n                                        class=\"feather feather-chevron-right\"\n                                    >\n                                        <polyline points=\"9 18 15 12 9 6\"></polyline>\n                                    </svg>\n                                </a>\n                                <ul class=\"collapse list-unstyled sub-submenu\">\n                                    <li><a target=\"_blank\" href=\"/auth/lockscreen\">Unlock Cover</a></li>\n                                    <li><a target=\"_blank\" href=\"/auth/lockscreen-boxed\">Unlock Boxed</a></li>\n                                </ul>\n                            </li>\n                        </ul>\n                    </li>\n\n                    <li class=\"menu single-menu\">\n                        <a href=\"javascript:;\" class=\"dropdown-toggle\">\n                            <div class=\"\">\n                                <svg\n                                    xmlns=\"http://www.w3.org/2000/svg\"\n                                    width=\"24\"\n                                    height=\"24\"\n                                    viewBox=\"0 0 24 24\"\n                                    fill=\"none\"\n                                    stroke=\"currentColor\"\n                                    stroke-width=\"2\"\n                                    stroke-linecap=\"round\"\n                                    stroke-linejoin=\"round\"\n                                    class=\"feather feather-plus-circle\"\n                                >\n                                    <circle cx=\"12\" cy=\"12\" r=\"10\"></circle>\n                                    <line x1=\"12\" y1=\"8\" x2=\"12\" y2=\"16\"></line>\n                                    <line x1=\"8\" y1=\"12\" x2=\"16\" y2=\"12\"></line>\n                                </svg>\n                                <span>{{ $t('more') }}</span>\n                            </div>\n                            <svg\n                                xmlns=\"http://www.w3.org/2000/svg\"\n                                width=\"24\"\n                                height=\"24\"\n                                viewBox=\"0 0 24 24\"\n                                fill=\"none\"\n                                stroke=\"currentColor\"\n                                stroke-width=\"2\"\n                                stroke-linecap=\"round\"\n                                stroke-linejoin=\"round\"\n                                class=\"feather feather-chevron-down\"\n                            >\n                                <polyline points=\"6 9 12 15 18 9\"></polyline>\n                            </svg>\n                        </a>\n                        <ul class=\"collapse submenu list-unstyled\">\n                            <li><router-link to=\"/dragndrop\">Drag and Drop</router-link></li>\n                            <li><router-link to=\"/widgets\">Widgets</router-link></li>\n                            <li><router-link to=\"/charts/apex-chart\">Charts</router-link></li>\n                            <li><router-link to=\"/font-icons\">Font Icons</router-link></li>\n                            <li>\n                                <a target=\"_blank\" href=\"https://cork-vue.sbthemes.com\"> Documentation </a>\n                            </li>\n                        </ul>\n                    </li>\n                </ul>\n            </nav>\n        </div> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("  END TOPBAR  ")]);
 }
 
 /***/ }),
@@ -25995,6 +26009,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 var _hoisted_1 = {
+  key: 0,
   "class": "sidebar-wrapper sidebar-theme"
 };
 var _hoisted_2 = {
@@ -26077,7 +26092,7 @@ var _hoisted_10 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 /* HOISTED */
 );
 
-var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "Aplusan", -1
+var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "ORDER / PENGAMBILAN", -1
 /* HOISTED */
 );
 
@@ -26116,54 +26131,15 @@ var _hoisted_14 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 /* HOISTED */
 );
 
-var _hoisted_15 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "BBM", -1
+var _hoisted_15 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "PELANGGAN", -1
 /* HOISTED */
 );
 
 var _hoisted_16 = {
   "class": "menu"
 };
-var _hoisted_17 = {
-  "class": "dropdown-toggle",
-  "data-bs-toggle": "collapse",
-  "data-bs-target": "#components",
-  "aria-controls": "components",
-  "aria-expanded": "false"
-};
 
-var _hoisted_18 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("svg", {
-  xmlns: "http://www.w3.org/2000/svg",
-  width: "24",
-  height: "24",
-  viewBox: "0 0 24 24",
-  fill: "none",
-  stroke: "currentColor",
-  "stroke-width": "2",
-  "stroke-linecap": "round",
-  "stroke-linejoin": "round",
-  "class": "feather feather-box"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("path", {
-  d: "M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"
-}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("polyline", {
-  points: "3.27 6.96 12 12.01 20.73 6.96"
-}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("line", {
-  x1: "12",
-  y1: "22.08",
-  x2: "12",
-  y2: "12"
-})], -1
-/* HOISTED */
-);
-
-var _hoisted_19 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "Barang", -1
-/* HOISTED */
-);
-
-var _hoisted_20 = {
-  "class": "menu"
-};
-
-var _hoisted_21 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+var _hoisted_17 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
   "class": "dropdown-toggle",
   "data-bs-toggle": "collapse",
   "data-bs-target": "#datatables",
@@ -26188,7 +26164,7 @@ var _hoisted_21 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
   points: "2 17 12 22 22 17"
 }), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("polyline", {
   points: "2 12 12 17 22 12"
-})]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "Master"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" {{ $t('Master') }}</span> ")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("svg", {
+})]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "MASTER"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" {{ $t('Master') }}</span> ")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("svg", {
   xmlns: "http://www.w3.org/2000/svg",
   width: "24",
   height: "24",
@@ -26205,16 +26181,16 @@ var _hoisted_21 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 /* HOISTED */
 );
 
-var _hoisted_22 = {
+var _hoisted_18 = {
   id: "datatables",
   "class": "collapse submenu list-unstyled",
   "data-bs-parent": "#sidebar"
 };
-var _hoisted_23 = {
+var _hoisted_19 = {
   "class": "menu"
 };
 
-var _hoisted_24 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+var _hoisted_20 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
   "class": "dropdown-toggle",
   "data-bs-toggle": "collapse",
   "data-bs-target": "#labarugi",
@@ -26239,16 +26215,16 @@ var _hoisted_24 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 /* HOISTED */
 );
 
-var _hoisted_25 = {
+var _hoisted_21 = {
   id: "labarugi",
   "class": "collapse submenu list-unstyled",
   "data-bs-parent": "#datatables"
 };
-var _hoisted_26 = {
+var _hoisted_22 = {
   "class": "menu"
 };
 
-var _hoisted_27 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+var _hoisted_23 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
   "class": "dropdown-toggle",
   "data-bs-toggle": "collapse",
   "data-bs-target": "#apps",
@@ -26319,7 +26295,7 @@ var _hoisted_27 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
   y1: "14",
   x2: "4",
   y2: "14"
-})]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "Transaksi")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("svg", {
+})]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "TRANSAKSI")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("svg", {
   xmlns: "http://www.w3.org/2000/svg",
   width: "24",
   height: "24",
@@ -26336,16 +26312,16 @@ var _hoisted_27 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 /* HOISTED */
 );
 
-var _hoisted_28 = {
+var _hoisted_24 = {
   id: "apps",
   "class": "collapse submenu list-unstyled",
   "data-bs-parent": "#sidebar"
 };
-var _hoisted_29 = {
+var _hoisted_25 = {
   "class": "menu"
 };
 
-var _hoisted_30 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+var _hoisted_26 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
   "class": "dropdown-toggle",
   "data-bs-toggle": "collapse",
   "data-bs-target": "#opnum",
@@ -26370,16 +26346,16 @@ var _hoisted_30 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 /* HOISTED */
 );
 
-var _hoisted_31 = {
+var _hoisted_27 = {
   id: "opnum",
   "class": "collapse submenu list-unstyled",
   "data-bs-parent": "#apps"
 };
-var _hoisted_32 = {
+var _hoisted_28 = {
   "class": "menu"
 };
 
-var _hoisted_33 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+var _hoisted_29 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
   "class": "dropdown-toggle",
   "data-bs-toggle": "collapse",
   "data-bs-target": "#forms",
@@ -26424,7 +26400,7 @@ var _hoisted_33 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 /* HOISTED */
 );
 
-var _hoisted_34 = {
+var _hoisted_30 = {
   id: "forms",
   "class": "collapse submenu list-unstyled",
   "data-bs-parent": "#sidebar"
@@ -26434,7 +26410,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
   var _component_perfect_scrollbar = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("perfect-scrollbar");
 
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("  BEGIN SIDEBAR  "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("nav", _hoisted_2, [_hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_perfect_scrollbar, {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("  BEGIN SIDEBAR v-if=\"$store.state.auth.role == 'admin'\" "), _ctx.$store.getters.StateUser.role == 'admin' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("nav", _hoisted_2, [_hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_perfect_scrollbar, {
     "class": "list-unstyled menu-categories",
     tag: "ul",
     options: {
@@ -26456,7 +26432,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
         /* STABLE */
 
       })])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_9, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
-        to: "/transaksi-aplusan"
+        to: "/order"
       }, {
         "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
           return [_hoisted_10, _hoisted_11];
@@ -26465,7 +26441,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
         /* STABLE */
 
       }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <span>{{ $t('Barang') }}</span> ")])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_12, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_13, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
-        to: "/bbm"
+        to: "/barang"
       }, {
         "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
           return [_hoisted_14, _hoisted_15];
@@ -26473,16 +26449,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
         _: 1
         /* STABLE */
 
-      }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <span>{{ $t('Barang') }}</span> ")])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_16, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_17, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
-        to: "/barang"
-      }, {
-        "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-          return [_hoisted_18, _hoisted_19];
-        }),
-        _: 1
-        /* STABLE */
-
-      }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <span>{{ $t('Barang') }}</span> ")])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_20, [_hoisted_21, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", _hoisted_22, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+      }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <span>{{ $t('Barang') }}</span> ")])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_16, [_hoisted_17, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", _hoisted_18, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
         to: "/pegawai",
         onClick: $setup.toggleMobileMenu
       }, {
@@ -26498,16 +26465,6 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       }, {
         "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
           return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Supplier")];
-        }),
-        _: 1
-        /* STABLE */
-
-      })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
-        to: "/pelanggan",
-        onClick: $setup.toggleMobileMenu
-      }, {
-        "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Pelanggan")];
         }),
         _: 1
         /* STABLE */
@@ -26552,7 +26509,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
         _: 1
         /* STABLE */
 
-      })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_23, [_hoisted_24, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", _hoisted_25, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+      })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_19, [_hoisted_20, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", _hoisted_21, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
         to: "/coa/pendapatan",
         onClick: $setup.toggleMobileMenu
       }, {
@@ -26582,7 +26539,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
         _: 1
         /* STABLE */
 
-      })])])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_26, [_hoisted_27, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", _hoisted_28, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+      })])])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_22, [_hoisted_23, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", _hoisted_24, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
         to: "/po-bbm",
         onClick: $setup.toggleMobileMenu
       }, {
@@ -26642,7 +26599,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
         _: 1
         /* STABLE */
 
-      })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_29, [_hoisted_30, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", _hoisted_31, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+      })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_25, [_hoisted_26, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", _hoisted_27, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
         to: "/opnum-bbm",
         onClick: $setup.toggleMobileMenu
       }, {
@@ -26682,7 +26639,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
         _: 1
         /* STABLE */
 
-      })])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_32, [_hoisted_33, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", _hoisted_34, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+      })])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_28, [_hoisted_29, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", _hoisted_30, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
         to: "/rekapan/harian",
         onClick: $setup.toggleMobileMenu
       }, {
@@ -26811,7 +26768,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   /* PROPS */
   , ["options"])], 512
   /* NEED_PATCH */
-  )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("  END SIDEBAR  ")], 2112
+  )])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("  END SIDEBAR  ")], 2112
   /* STABLE_FRAGMENT, DEV_ROOT_FRAGMENT */
   );
 }
@@ -27875,10 +27832,10 @@ var routes = [//dashboard
     return __webpack_require__.e(/*! import() | index2 */ "index2").then(__webpack_require__.bind(__webpack_require__, /*! ../views/index2.vue */ "./resources/js/src/views/index2.vue"));
   }
 }, {
-  path: '/bbm',
-  name: 'bbm',
+  path: '/order',
+  name: 'order',
   component: function component() {
-    return __webpack_require__.e(/*! import() | components-tabs */ "components-tabs").then(__webpack_require__.bind(__webpack_require__, /*! ../views/master/indexBbm.vue */ "./resources/js/src/views/master/indexBbm.vue"));
+    return __webpack_require__.e(/*! import() | components-tabs */ "components-tabs").then(__webpack_require__.bind(__webpack_require__, /*! ../views/master/indexOrder.vue */ "./resources/js/src/views/master/indexOrder.vue"));
   } // meta: { requiresAuth: true },
 
 }, //======================COA
@@ -27927,21 +27884,6 @@ var routes = [//dashboard
   } // meta: { requiresAuth: true },
 
 }, {
-  path: '/transaksi-aplusan',
-  name: 'transaksi-aplusan',
-  component: function component() {
-    return __webpack_require__.e(/*! import() | components-tabs */ "components-tabs").then(__webpack_require__.bind(__webpack_require__, /*! ../views/master/indexNosel.vue */ "./resources/js/src/views/master/indexNosel.vue"));
-  } // meta: { requiresAuth: true },
-
-}, {
-  path: '/edit-aplusan',
-  name: 'edit-aplusan',
-  component: function component() {
-    return __webpack_require__.e(/*! import() | components-tabs */ "components-tabs").then(__webpack_require__.bind(__webpack_require__, /*! ../views/master/editAplusan.vue */ "./resources/js/src/views/master/editAplusan.vue"));
-  },
-  // meta: { requiresAuth: true },
-  props: true
-}, {
   path: '/barang',
   name: 'barang',
   component: function component() {
@@ -27969,28 +27911,20 @@ var routes = [//dashboard
     return __webpack_require__.e(/*! import() | components-tabs */ "components-tabs").then(__webpack_require__.bind(__webpack_require__, /*! ../views/master/indexInventaris.vue */ "./resources/js/src/views/master/indexInventaris.vue"));
   } // meta: { requiresAuth: true },
 
-}, {
-  path: '/nosel',
-  name: 'nosel',
-  component: function component() {
-    return __webpack_require__.e(/*! import() | components-tabs */ "components-tabs").then(__webpack_require__.bind(__webpack_require__, /*! ../views/master/indexNosel.vue */ "./resources/js/src/views/master/indexNosel.vue"));
-  },
-  // meta: { requiresAuth: true },
-  props: true
 }, //================end of master
 // transaksi
 {
-  path: '/po-bbm',
-  name: 'po-bbm',
+  path: '/new-order',
+  name: 'new-order',
   component: function component() {
-    return __webpack_require__.e(/*! import() | components-tabs */ "components-tabs").then(__webpack_require__.bind(__webpack_require__, /*! ../views/transaksi/poBbm.vue */ "./resources/js/src/views/transaksi/poBbm.vue"));
+    return __webpack_require__.e(/*! import() | components-tabs */ "components-tabs").then(__webpack_require__.bind(__webpack_require__, /*! ../views/transaksi/new_order.vue */ "./resources/js/src/views/transaksi/new_order.vue"));
   },
   props: true
 }, {
-  path: '/bbm-datang',
-  name: 'bbm-datang',
+  path: '/new-pengambilan',
+  name: 'new-pengambilan',
   component: function component() {
-    return __webpack_require__.e(/*! import() | components-tabs */ "components-tabs").then(__webpack_require__.bind(__webpack_require__, /*! ../views/transaksi/bbmDatang.vue */ "./resources/js/src/views/transaksi/bbmDatang.vue"));
+    return __webpack_require__.e(/*! import() | components-tabs */ "components-tabs").then(__webpack_require__.bind(__webpack_require__, /*! ../views/transaksi/new_pengambilan.vue */ "./resources/js/src/views/transaksi/new_pengambilan.vue"));
   },
   props: true
 }, {
@@ -28042,14 +27976,6 @@ var routes = [//dashboard
   name: 'opnum-barang',
   component: function component() {
     return __webpack_require__.e(/*! import() | components-tabs */ "components-tabs").then(__webpack_require__.bind(__webpack_require__, /*! ../views/transaksi/opnumBarang.vue */ "./resources/js/src/views/transaksi/opnumBarang.vue"));
-  } // props: true,
-  // meta: { requiresAuth: true },
-
-}, {
-  path: '/opnum-bbm',
-  name: 'opnum-bbm',
-  component: function component() {
-    return __webpack_require__.e(/*! import() | components-tabs */ "components-tabs").then(__webpack_require__.bind(__webpack_require__, /*! ../views/transaksi/opnumBbm.vue */ "./resources/js/src/views/transaksi/opnumBbm.vue"));
   } // props: true,
   // meta: { requiresAuth: true },
 
@@ -28131,13 +28057,6 @@ var routes = [//dashboard
   name: 'laporan-opnum',
   component: function component() {
     return __webpack_require__.e(/*! import() | components-tabs */ "components-tabs").then(__webpack_require__.bind(__webpack_require__, /*! ../views/laporan/laporanOpnum.vue */ "./resources/js/src/views/laporan/laporanOpnum.vue"));
-  },
-  props: true
-}, {
-  path: '/laporan/tera',
-  name: 'laporan-tera',
-  component: function component() {
-    return __webpack_require__.e(/*! import() | components-tabs */ "components-tabs").then(__webpack_require__.bind(__webpack_require__, /*! ../views/laporan/laporanTera.vue */ "./resources/js/src/views/laporan/laporanTera.vue"));
   },
   props: true
 }, {
@@ -28864,7 +28783,8 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
 var state = {
   user: localStorage.getItem('userLogin'),
-  token: localStorage.getItem('tokenLogin')
+  token: localStorage.getItem('tokenLogin'),
+  cabang: []
 };
 var getters = {
   isAuthenticated: function isAuthenticated(state) {
@@ -28872,6 +28792,9 @@ var getters = {
   },
   StateUser: function StateUser(state) {
     return state.user;
+  },
+  StateCabang: function StateCabang(state) {
+    return state.cabang;
   }
 };
 var actions = {
@@ -28935,13 +28858,16 @@ var actions = {
               axios__WEBPACK_IMPORTED_MODULE_0__["default"].defaults.headers.common.Authorization = 'Bearer ' + response.data.token;
               localStorage.setItem('tokenLogin', response.data.token);
               localStorage.setItem('userLogin', JSON.stringify(response.data.user));
+              localStorage.setItem('cabangLogin', JSON.stringify(response.data.cabang));
               commit('setToken', response.data.token);
+              commit('setCabang', response.data.cabang);
               return _context2.abrupt("return", response);
 
-            case 16:
-              _context2.prev = 16;
+            case 18:
+              _context2.prev = 18;
               _context2.t0 = _context2["catch"](1);
               // Handle error
+              // console.log(error.response.data.message)
               _toast = window.Swal.mixin({
                 toast: true,
                 position: 'top-center',
@@ -28952,7 +28878,7 @@ var actions = {
 
               _toast.fire({
                 title: 'Error!',
-                text: 'Username atau password salah',
+                text: _context2.t0.response.data.message,
                 icon: 'error',
                 // confirmButtonText: 'Cool',
                 padding: '2em'
@@ -28960,12 +28886,12 @@ var actions = {
 
               throw 'jhjhvjnhv';
 
-            case 21:
+            case 23:
             case "end":
               return _context2.stop();
           }
         }
-      }, _callee2, null, [[1, 16]]);
+      }, _callee2, null, [[1, 18]]);
     }))();
   },
   LogOut: function LogOut(_ref3) {
@@ -28996,6 +28922,9 @@ var mutations = {
   },
   setToken: function setToken(state, token) {
     state.token = token;
+  },
+  setCabang: function setCabang(state, cbg) {
+    state.cabang = cbg;
   },
   LogOut: function LogOut(state) {
     state.user = [];
@@ -29315,304 +29244,6 @@ var mutations = {
 
 /***/ }),
 
-/***/ "./resources/js/src/store/bbm.js":
-/*!***************************************!*\
-  !*** ./resources/js/src/store/bbm.js ***!
-  \***************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/lib/axios.js");
-function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
-
-function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return exports; }; var exports = {}, Op = Object.prototype, hasOwn = Op.hasOwnProperty, $Symbol = "function" == typeof Symbol ? Symbol : {}, iteratorSymbol = $Symbol.iterator || "@@iterator", asyncIteratorSymbol = $Symbol.asyncIterator || "@@asyncIterator", toStringTagSymbol = $Symbol.toStringTag || "@@toStringTag"; function define(obj, key, value) { return Object.defineProperty(obj, key, { value: value, enumerable: !0, configurable: !0, writable: !0 }), obj[key]; } try { define({}, ""); } catch (err) { define = function define(obj, key, value) { return obj[key] = value; }; } function wrap(innerFn, outerFn, self, tryLocsList) { var protoGenerator = outerFn && outerFn.prototype instanceof Generator ? outerFn : Generator, generator = Object.create(protoGenerator.prototype), context = new Context(tryLocsList || []); return generator._invoke = function (innerFn, self, context) { var state = "suspendedStart"; return function (method, arg) { if ("executing" === state) throw new Error("Generator is already running"); if ("completed" === state) { if ("throw" === method) throw arg; return doneResult(); } for (context.method = method, context.arg = arg;;) { var delegate = context.delegate; if (delegate) { var delegateResult = maybeInvokeDelegate(delegate, context); if (delegateResult) { if (delegateResult === ContinueSentinel) continue; return delegateResult; } } if ("next" === context.method) context.sent = context._sent = context.arg;else if ("throw" === context.method) { if ("suspendedStart" === state) throw state = "completed", context.arg; context.dispatchException(context.arg); } else "return" === context.method && context.abrupt("return", context.arg); state = "executing"; var record = tryCatch(innerFn, self, context); if ("normal" === record.type) { if (state = context.done ? "completed" : "suspendedYield", record.arg === ContinueSentinel) continue; return { value: record.arg, done: context.done }; } "throw" === record.type && (state = "completed", context.method = "throw", context.arg = record.arg); } }; }(innerFn, self, context), generator; } function tryCatch(fn, obj, arg) { try { return { type: "normal", arg: fn.call(obj, arg) }; } catch (err) { return { type: "throw", arg: err }; } } exports.wrap = wrap; var ContinueSentinel = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var IteratorPrototype = {}; define(IteratorPrototype, iteratorSymbol, function () { return this; }); var getProto = Object.getPrototypeOf, NativeIteratorPrototype = getProto && getProto(getProto(values([]))); NativeIteratorPrototype && NativeIteratorPrototype !== Op && hasOwn.call(NativeIteratorPrototype, iteratorSymbol) && (IteratorPrototype = NativeIteratorPrototype); var Gp = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(IteratorPrototype); function defineIteratorMethods(prototype) { ["next", "throw", "return"].forEach(function (method) { define(prototype, method, function (arg) { return this._invoke(method, arg); }); }); } function AsyncIterator(generator, PromiseImpl) { function invoke(method, arg, resolve, reject) { var record = tryCatch(generator[method], generator, arg); if ("throw" !== record.type) { var result = record.arg, value = result.value; return value && "object" == _typeof(value) && hasOwn.call(value, "__await") ? PromiseImpl.resolve(value.__await).then(function (value) { invoke("next", value, resolve, reject); }, function (err) { invoke("throw", err, resolve, reject); }) : PromiseImpl.resolve(value).then(function (unwrapped) { result.value = unwrapped, resolve(result); }, function (error) { return invoke("throw", error, resolve, reject); }); } reject(record.arg); } var previousPromise; this._invoke = function (method, arg) { function callInvokeWithMethodAndArg() { return new PromiseImpl(function (resolve, reject) { invoke(method, arg, resolve, reject); }); } return previousPromise = previousPromise ? previousPromise.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg(); }; } function maybeInvokeDelegate(delegate, context) { var method = delegate.iterator[context.method]; if (undefined === method) { if (context.delegate = null, "throw" === context.method) { if (delegate.iterator["return"] && (context.method = "return", context.arg = undefined, maybeInvokeDelegate(delegate, context), "throw" === context.method)) return ContinueSentinel; context.method = "throw", context.arg = new TypeError("The iterator does not provide a 'throw' method"); } return ContinueSentinel; } var record = tryCatch(method, delegate.iterator, context.arg); if ("throw" === record.type) return context.method = "throw", context.arg = record.arg, context.delegate = null, ContinueSentinel; var info = record.arg; return info ? info.done ? (context[delegate.resultName] = info.value, context.next = delegate.nextLoc, "return" !== context.method && (context.method = "next", context.arg = undefined), context.delegate = null, ContinueSentinel) : info : (context.method = "throw", context.arg = new TypeError("iterator result is not an object"), context.delegate = null, ContinueSentinel); } function pushTryEntry(locs) { var entry = { tryLoc: locs[0] }; 1 in locs && (entry.catchLoc = locs[1]), 2 in locs && (entry.finallyLoc = locs[2], entry.afterLoc = locs[3]), this.tryEntries.push(entry); } function resetTryEntry(entry) { var record = entry.completion || {}; record.type = "normal", delete record.arg, entry.completion = record; } function Context(tryLocsList) { this.tryEntries = [{ tryLoc: "root" }], tryLocsList.forEach(pushTryEntry, this), this.reset(!0); } function values(iterable) { if (iterable) { var iteratorMethod = iterable[iteratorSymbol]; if (iteratorMethod) return iteratorMethod.call(iterable); if ("function" == typeof iterable.next) return iterable; if (!isNaN(iterable.length)) { var i = -1, next = function next() { for (; ++i < iterable.length;) { if (hasOwn.call(iterable, i)) return next.value = iterable[i], next.done = !1, next; } return next.value = undefined, next.done = !0, next; }; return next.next = next; } } return { next: doneResult }; } function doneResult() { return { value: undefined, done: !0 }; } return GeneratorFunction.prototype = GeneratorFunctionPrototype, define(Gp, "constructor", GeneratorFunctionPrototype), define(GeneratorFunctionPrototype, "constructor", GeneratorFunction), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, toStringTagSymbol, "GeneratorFunction"), exports.isGeneratorFunction = function (genFun) { var ctor = "function" == typeof genFun && genFun.constructor; return !!ctor && (ctor === GeneratorFunction || "GeneratorFunction" === (ctor.displayName || ctor.name)); }, exports.mark = function (genFun) { return Object.setPrototypeOf ? Object.setPrototypeOf(genFun, GeneratorFunctionPrototype) : (genFun.__proto__ = GeneratorFunctionPrototype, define(genFun, toStringTagSymbol, "GeneratorFunction")), genFun.prototype = Object.create(Gp), genFun; }, exports.awrap = function (arg) { return { __await: arg }; }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, asyncIteratorSymbol, function () { return this; }), exports.AsyncIterator = AsyncIterator, exports.async = function (innerFn, outerFn, self, tryLocsList, PromiseImpl) { void 0 === PromiseImpl && (PromiseImpl = Promise); var iter = new AsyncIterator(wrap(innerFn, outerFn, self, tryLocsList), PromiseImpl); return exports.isGeneratorFunction(outerFn) ? iter : iter.next().then(function (result) { return result.done ? result.value : iter.next(); }); }, defineIteratorMethods(Gp), define(Gp, toStringTagSymbol, "Generator"), define(Gp, iteratorSymbol, function () { return this; }), define(Gp, "toString", function () { return "[object Generator]"; }), exports.keys = function (object) { var keys = []; for (var key in object) { keys.push(key); } return keys.reverse(), function next() { for (; keys.length;) { var key = keys.pop(); if (key in object) return next.value = key, next.done = !1, next; } return next.done = !0, next; }; }, exports.values = values, Context.prototype = { constructor: Context, reset: function reset(skipTempReset) { if (this.prev = 0, this.next = 0, this.sent = this._sent = undefined, this.done = !1, this.delegate = null, this.method = "next", this.arg = undefined, this.tryEntries.forEach(resetTryEntry), !skipTempReset) for (var name in this) { "t" === name.charAt(0) && hasOwn.call(this, name) && !isNaN(+name.slice(1)) && (this[name] = undefined); } }, stop: function stop() { this.done = !0; var rootRecord = this.tryEntries[0].completion; if ("throw" === rootRecord.type) throw rootRecord.arg; return this.rval; }, dispatchException: function dispatchException(exception) { if (this.done) throw exception; var context = this; function handle(loc, caught) { return record.type = "throw", record.arg = exception, context.next = loc, caught && (context.method = "next", context.arg = undefined), !!caught; } for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i], record = entry.completion; if ("root" === entry.tryLoc) return handle("end"); if (entry.tryLoc <= this.prev) { var hasCatch = hasOwn.call(entry, "catchLoc"), hasFinally = hasOwn.call(entry, "finallyLoc"); if (hasCatch && hasFinally) { if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0); if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc); } else if (hasCatch) { if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0); } else { if (!hasFinally) throw new Error("try statement without catch or finally"); if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc); } } } }, abrupt: function abrupt(type, arg) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.tryLoc <= this.prev && hasOwn.call(entry, "finallyLoc") && this.prev < entry.finallyLoc) { var finallyEntry = entry; break; } } finallyEntry && ("break" === type || "continue" === type) && finallyEntry.tryLoc <= arg && arg <= finallyEntry.finallyLoc && (finallyEntry = null); var record = finallyEntry ? finallyEntry.completion : {}; return record.type = type, record.arg = arg, finallyEntry ? (this.method = "next", this.next = finallyEntry.finallyLoc, ContinueSentinel) : this.complete(record); }, complete: function complete(record, afterLoc) { if ("throw" === record.type) throw record.arg; return "break" === record.type || "continue" === record.type ? this.next = record.arg : "return" === record.type ? (this.rval = this.arg = record.arg, this.method = "return", this.next = "end") : "normal" === record.type && afterLoc && (this.next = afterLoc), ContinueSentinel; }, finish: function finish(finallyLoc) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.finallyLoc === finallyLoc) return this.complete(entry.completion, entry.afterLoc), resetTryEntry(entry), ContinueSentinel; } }, "catch": function _catch(tryLoc) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.tryLoc === tryLoc) { var record = entry.completion; if ("throw" === record.type) { var thrown = record.arg; resetTryEntry(entry); } return thrown; } } throw new Error("illegal catch attempt"); }, delegateYield: function delegateYield(iterable, resultName, nextLoc) { return this.delegate = { iterator: values(iterable), resultName: resultName, nextLoc: nextLoc }, "next" === this.method && (this.arg = undefined), ContinueSentinel; } }, exports; }
-
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
-
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
-
-//store/modules/auth.js
-
-var state = {
-  bbm: null,
-  listtera: []
-};
-var getters = {
-  StateBbm: function StateBbm(state) {
-    return state.bbm;
-  },
-  StateListTera: function StateListTera(state) {
-    return state.listtera;
-  }
-};
-var actions = {
-  CreatePost: function CreatePost(_ref, post) {
-    return _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
-      var dispatch;
-      return _regeneratorRuntime().wrap(function _callee$(_context) {
-        while (1) {
-          switch (_context.prev = _context.next) {
-            case 0:
-              dispatch = _ref.dispatch;
-              _context.next = 3;
-              return axios__WEBPACK_IMPORTED_MODULE_0__["default"].post('/api/bbm', post);
-
-            case 3:
-              _context.next = 5;
-              return dispatch('GetBbm');
-
-            case 5:
-            case "end":
-              return _context.stop();
-          }
-        }
-      }, _callee);
-    }))();
-  },
-  GetBbm: function GetBbm(_ref2) {
-    return _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee2() {
-      var commit, response;
-      return _regeneratorRuntime().wrap(function _callee2$(_context2) {
-        while (1) {
-          switch (_context2.prev = _context2.next) {
-            case 0:
-              commit = _ref2.commit;
-              _context2.next = 3;
-              return axios__WEBPACK_IMPORTED_MODULE_0__["default"].get('/api/bbm');
-
-            case 3:
-              response = _context2.sent;
-              commit('setBbm', response.data.data);
-
-            case 5:
-            case "end":
-              return _context2.stop();
-          }
-        }
-      }, _callee2);
-    }))();
-  },
-  EditBbm: function EditBbm(_ref3, Bbm) {
-    return _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee3() {
-      var dispatch;
-      return _regeneratorRuntime().wrap(function _callee3$(_context3) {
-        while (1) {
-          switch (_context3.prev = _context3.next) {
-            case 0:
-              dispatch = _ref3.dispatch;
-              _context3.next = 3;
-              return axios__WEBPACK_IMPORTED_MODULE_0__["default"].post('/api/update/bbm', Bbm);
-
-            case 3:
-              _context3.next = 5;
-              return dispatch('GetBbm');
-
-            case 5:
-            case "end":
-              return _context3.stop();
-          }
-        }
-      }, _callee3);
-    }))();
-  },
-  DeleteBbm: function DeleteBbm(_ref4, id) {
-    return _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee4() {
-      var dispatch, response, toast, _toast;
-
-      return _regeneratorRuntime().wrap(function _callee4$(_context4) {
-        while (1) {
-          switch (_context4.prev = _context4.next) {
-            case 0:
-              dispatch = _ref4.dispatch;
-              _context4.prev = 1;
-              _context4.next = 4;
-              return axios__WEBPACK_IMPORTED_MODULE_0__["default"]["delete"]("/api/hapus/bbm/".concat(id));
-
-            case 4:
-              response = _context4.sent;
-              _context4.next = 7;
-              return dispatch('GetBbm');
-
-            case 7:
-              toast = window.Swal.mixin({
-                toast: true,
-                position: 'top-center',
-                showConfirmButton: false,
-                timer: 3000,
-                padding: '2em'
-              });
-              toast.fire({
-                icon: 'success',
-                title: 'BBM berhasil terhapus',
-                padding: '2em'
-              });
-              return _context4.abrupt("return", response);
-
-            case 12:
-              _context4.prev = 12;
-              _context4.t0 = _context4["catch"](1);
-              // Handle error
-              _toast = window.Swal.mixin({
-                toast: true,
-                position: 'top-center',
-                showConfirmButton: false,
-                timer: 3000,
-                padding: '2em'
-              });
-
-              _toast.fire({
-                title: 'Error!',
-                text: 'BBM Gagal Dihapus',
-                icon: 'error',
-                // confirmButtonText: 'Cool',
-                padding: '2em'
-              });
-
-              throw 'error';
-
-            case 17:
-            case "end":
-              return _context4.stop();
-          }
-        }
-      }, _callee4, null, [[1, 12]]);
-    }))();
-  },
-  UpdateHargaBbm: function UpdateHargaBbm(_ref5, newhrg) {
-    return _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee5() {
-      var dispatch, toast, _toast2;
-
-      return _regeneratorRuntime().wrap(function _callee5$(_context5) {
-        while (1) {
-          switch (_context5.prev = _context5.next) {
-            case 0:
-              dispatch = _ref5.dispatch;
-              _context5.prev = 1;
-              _context5.next = 4;
-              return axios__WEBPACK_IMPORTED_MODULE_0__["default"].post('api/update/harga-bbm', newhrg);
-
-            case 4:
-              console.log(newhrg);
-              _context5.next = 7;
-              return dispatch('GetBbm');
-
-            case 7:
-              toast = window.Swal.mixin({
-                toast: true,
-                position: 'top-center',
-                showConfirmButton: false,
-                timer: 3000,
-                padding: '2em'
-              });
-              toast.fire({
-                icon: 'success',
-                title: 'Berhasil Simpan Barang',
-                padding: '2em'
-              });
-              _context5.next = 15;
-              break;
-
-            case 11:
-              _context5.prev = 11;
-              _context5.t0 = _context5["catch"](1);
-              _toast2 = window.Swal.mixin({
-                toast: true,
-                position: 'top-center',
-                showConfirmButton: false,
-                timer: 3000,
-                padding: '2em'
-              });
-
-              _toast2.fire({
-                title: 'Error!',
-                text: 'gagal disimpan',
-                icon: 'error',
-                // confirmButtonText: 'Cool',
-                padding: '2em'
-              });
-
-            case 15:
-            case "end":
-              return _context5.stop();
-          }
-        }
-      }, _callee5, null, [[1, 11]]);
-    }))();
-  },
-  GetListTera: function GetListTera(_ref6, tera) {
-    return _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee6() {
-      var commit, response, toast;
-      return _regeneratorRuntime().wrap(function _callee6$(_context6) {
-        while (1) {
-          switch (_context6.prev = _context6.next) {
-            case 0:
-              commit = _ref6.commit;
-              _context6.prev = 1;
-              _context6.next = 4;
-              return axios__WEBPACK_IMPORTED_MODULE_0__["default"].post('/api/laporan-tera', tera);
-
-            case 4:
-              response = _context6.sent;
-              _context6.next = 7;
-              return commit('setListTera', response.data.data);
-
-            case 7:
-              _context6.next = 13;
-              break;
-
-            case 9:
-              _context6.prev = 9;
-              _context6.t0 = _context6["catch"](1);
-              toast = window.Swal.mixin({
-                toast: true,
-                position: 'top-center',
-                showConfirmButton: false,
-                timer: 3000,
-                padding: '2em'
-              });
-              toast.fire({
-                title: 'Error!',
-                text: 'gagal disimpan',
-                icon: 'error',
-                // confirmButtonText: 'Cool',
-                padding: '2em'
-              });
-
-            case 13:
-            case "end":
-              return _context6.stop();
-          }
-        }
-      }, _callee6, null, [[1, 9]]);
-    }))();
-  }
-};
-var mutations = {
-  setBbm: function setBbm(state, bbm) {
-    state.bbm = bbm;
-  },
-  setListTera: function setListTera(state, tera) {
-    state.listtera = tera;
-  } // DeleteBarang({dispatch}, id) {
-  //     axios.delete(`hapus/barang/${id}`)
-  //     dispatch('GetBarang')
-  //     // await commit('setUser', detUser.data.user)
-  // },
-
-};
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  state: state,
-  getters: getters,
-  actions: actions,
-  mutations: mutations
-});
-
-/***/ }),
-
 /***/ "./resources/js/src/store/coa.js":
 /*!***************************************!*\
   !*** ./resources/js/src/store/coa.js ***!
@@ -29787,33 +29418,29 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm-bundler.js");
+/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm-bundler.js");
 /* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../i18n */ "./resources/js/src/i18n.js");
 /* harmony import */ var _auth__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./auth */ "./resources/js/src/store/auth.js");
 /* harmony import */ var _barang__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./barang */ "./resources/js/src/store/barang.js");
 /* harmony import */ var _pelanggan__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pelanggan */ "./resources/js/src/store/pelanggan.js");
-/* harmony import */ var _room__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./room */ "./resources/js/src/store/room.js");
-/* harmony import */ var _bbm__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./bbm */ "./resources/js/src/store/bbm.js");
-/* harmony import */ var _nosel__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./nosel */ "./resources/js/src/store/nosel.js");
-/* harmony import */ var _transnosel__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./transnosel */ "./resources/js/src/store/transnosel.js");
-/* harmony import */ var _transaksi__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./transaksi */ "./resources/js/src/store/transaksi.js");
-/* harmony import */ var _supplier__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./supplier */ "./resources/js/src/store/supplier.js");
-/* harmony import */ var _nomor__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./nomor */ "./resources/js/src/store/nomor.js");
-/* harmony import */ var _laporan__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./laporan */ "./resources/js/src/store/laporan.js");
-/* harmony import */ var _labarugi__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./labarugi */ "./resources/js/src/store/labarugi.js");
-/* harmony import */ var _coa__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./coa */ "./resources/js/src/store/coa.js");
-/* harmony import */ var _inventaris__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./inventaris */ "./resources/js/src/store/inventaris.js");
-/* harmony import */ var _tax__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./tax */ "./resources/js/src/store/tax.js");
+/* harmony import */ var _nosel__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./nosel */ "./resources/js/src/store/nosel.js");
+/* harmony import */ var _transnosel__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./transnosel */ "./resources/js/src/store/transnosel.js");
+/* harmony import */ var _transaksi__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./transaksi */ "./resources/js/src/store/transaksi.js");
+/* harmony import */ var _supplier__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./supplier */ "./resources/js/src/store/supplier.js");
+/* harmony import */ var _nomor__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./nomor */ "./resources/js/src/store/nomor.js");
+/* harmony import */ var _laporan__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./laporan */ "./resources/js/src/store/laporan.js");
+/* harmony import */ var _labarugi__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./labarugi */ "./resources/js/src/store/labarugi.js");
+/* harmony import */ var _coa__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./coa */ "./resources/js/src/store/coa.js");
+/* harmony import */ var _inventaris__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./inventaris */ "./resources/js/src/store/inventaris.js");
+/* harmony import */ var _tax__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./tax */ "./resources/js/src/store/tax.js");
 
  // import createPersistedState from "vuex-persistedstate";
 
 
 
-
- // import kode from './kode';
-
-
-
+ // import room from './room';
+// import kode from './kode';
+// import bbm from './bbm';
 
 
 
@@ -29823,7 +29450,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (new vuex__WEBPACK_IMPORTED_MODULE_16__.createStore({
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (new vuex__WEBPACK_IMPORTED_MODULE_14__.createStore({
   state: {
     pajak: 11,
     layout: 'app',
@@ -29951,18 +29580,18 @@ __webpack_require__.r(__webpack_exports__);
     barang: _barang__WEBPACK_IMPORTED_MODULE_2__["default"],
     pelanggan: _pelanggan__WEBPACK_IMPORTED_MODULE_3__["default"],
     // kode,
-    room: _room__WEBPACK_IMPORTED_MODULE_4__["default"],
-    bbm: _bbm__WEBPACK_IMPORTED_MODULE_5__["default"],
-    nosel: _nosel__WEBPACK_IMPORTED_MODULE_6__["default"],
-    transnosel: _transnosel__WEBPACK_IMPORTED_MODULE_7__["default"],
-    transaksi: _transaksi__WEBPACK_IMPORTED_MODULE_8__["default"],
-    supplier: _supplier__WEBPACK_IMPORTED_MODULE_9__["default"],
-    nomor: _nomor__WEBPACK_IMPORTED_MODULE_10__["default"],
-    laporan: _laporan__WEBPACK_IMPORTED_MODULE_11__["default"],
-    labarugi: _labarugi__WEBPACK_IMPORTED_MODULE_12__["default"],
-    coa: _coa__WEBPACK_IMPORTED_MODULE_13__["default"],
-    inventaris: _inventaris__WEBPACK_IMPORTED_MODULE_14__["default"],
-    tax: _tax__WEBPACK_IMPORTED_MODULE_15__["default"]
+    // room,
+    // bbm,
+    nosel: _nosel__WEBPACK_IMPORTED_MODULE_4__["default"],
+    transnosel: _transnosel__WEBPACK_IMPORTED_MODULE_5__["default"],
+    transaksi: _transaksi__WEBPACK_IMPORTED_MODULE_6__["default"],
+    supplier: _supplier__WEBPACK_IMPORTED_MODULE_7__["default"],
+    nomor: _nomor__WEBPACK_IMPORTED_MODULE_8__["default"],
+    laporan: _laporan__WEBPACK_IMPORTED_MODULE_9__["default"],
+    labarugi: _labarugi__WEBPACK_IMPORTED_MODULE_10__["default"],
+    coa: _coa__WEBPACK_IMPORTED_MODULE_11__["default"],
+    inventaris: _inventaris__WEBPACK_IMPORTED_MODULE_12__["default"],
+    tax: _tax__WEBPACK_IMPORTED_MODULE_13__["default"]
   } // plugins: [createPersistedState()]
 
 }));
@@ -32220,148 +31849,6 @@ var actions = {
 var mutations = {
   setPelanggan: function setPelanggan(state, pelanggan) {
     state.pelanggan = pelanggan;
-  } // DeleteBarang({dispatch}, id) {
-  //     axios.delete(`hapus/barang/${id}`)
-  //     dispatch('GetBarang')
-  //     // await commit('setUser', detUser.data.user)
-  // },
-
-};
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  state: state,
-  getters: getters,
-  actions: actions,
-  mutations: mutations
-});
-
-/***/ }),
-
-/***/ "./resources/js/src/store/room.js":
-/*!****************************************!*\
-  !*** ./resources/js/src/store/room.js ***!
-  \****************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/lib/axios.js");
-function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
-
-function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return exports; }; var exports = {}, Op = Object.prototype, hasOwn = Op.hasOwnProperty, $Symbol = "function" == typeof Symbol ? Symbol : {}, iteratorSymbol = $Symbol.iterator || "@@iterator", asyncIteratorSymbol = $Symbol.asyncIterator || "@@asyncIterator", toStringTagSymbol = $Symbol.toStringTag || "@@toStringTag"; function define(obj, key, value) { return Object.defineProperty(obj, key, { value: value, enumerable: !0, configurable: !0, writable: !0 }), obj[key]; } try { define({}, ""); } catch (err) { define = function define(obj, key, value) { return obj[key] = value; }; } function wrap(innerFn, outerFn, self, tryLocsList) { var protoGenerator = outerFn && outerFn.prototype instanceof Generator ? outerFn : Generator, generator = Object.create(protoGenerator.prototype), context = new Context(tryLocsList || []); return generator._invoke = function (innerFn, self, context) { var state = "suspendedStart"; return function (method, arg) { if ("executing" === state) throw new Error("Generator is already running"); if ("completed" === state) { if ("throw" === method) throw arg; return doneResult(); } for (context.method = method, context.arg = arg;;) { var delegate = context.delegate; if (delegate) { var delegateResult = maybeInvokeDelegate(delegate, context); if (delegateResult) { if (delegateResult === ContinueSentinel) continue; return delegateResult; } } if ("next" === context.method) context.sent = context._sent = context.arg;else if ("throw" === context.method) { if ("suspendedStart" === state) throw state = "completed", context.arg; context.dispatchException(context.arg); } else "return" === context.method && context.abrupt("return", context.arg); state = "executing"; var record = tryCatch(innerFn, self, context); if ("normal" === record.type) { if (state = context.done ? "completed" : "suspendedYield", record.arg === ContinueSentinel) continue; return { value: record.arg, done: context.done }; } "throw" === record.type && (state = "completed", context.method = "throw", context.arg = record.arg); } }; }(innerFn, self, context), generator; } function tryCatch(fn, obj, arg) { try { return { type: "normal", arg: fn.call(obj, arg) }; } catch (err) { return { type: "throw", arg: err }; } } exports.wrap = wrap; var ContinueSentinel = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var IteratorPrototype = {}; define(IteratorPrototype, iteratorSymbol, function () { return this; }); var getProto = Object.getPrototypeOf, NativeIteratorPrototype = getProto && getProto(getProto(values([]))); NativeIteratorPrototype && NativeIteratorPrototype !== Op && hasOwn.call(NativeIteratorPrototype, iteratorSymbol) && (IteratorPrototype = NativeIteratorPrototype); var Gp = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(IteratorPrototype); function defineIteratorMethods(prototype) { ["next", "throw", "return"].forEach(function (method) { define(prototype, method, function (arg) { return this._invoke(method, arg); }); }); } function AsyncIterator(generator, PromiseImpl) { function invoke(method, arg, resolve, reject) { var record = tryCatch(generator[method], generator, arg); if ("throw" !== record.type) { var result = record.arg, value = result.value; return value && "object" == _typeof(value) && hasOwn.call(value, "__await") ? PromiseImpl.resolve(value.__await).then(function (value) { invoke("next", value, resolve, reject); }, function (err) { invoke("throw", err, resolve, reject); }) : PromiseImpl.resolve(value).then(function (unwrapped) { result.value = unwrapped, resolve(result); }, function (error) { return invoke("throw", error, resolve, reject); }); } reject(record.arg); } var previousPromise; this._invoke = function (method, arg) { function callInvokeWithMethodAndArg() { return new PromiseImpl(function (resolve, reject) { invoke(method, arg, resolve, reject); }); } return previousPromise = previousPromise ? previousPromise.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg(); }; } function maybeInvokeDelegate(delegate, context) { var method = delegate.iterator[context.method]; if (undefined === method) { if (context.delegate = null, "throw" === context.method) { if (delegate.iterator["return"] && (context.method = "return", context.arg = undefined, maybeInvokeDelegate(delegate, context), "throw" === context.method)) return ContinueSentinel; context.method = "throw", context.arg = new TypeError("The iterator does not provide a 'throw' method"); } return ContinueSentinel; } var record = tryCatch(method, delegate.iterator, context.arg); if ("throw" === record.type) return context.method = "throw", context.arg = record.arg, context.delegate = null, ContinueSentinel; var info = record.arg; return info ? info.done ? (context[delegate.resultName] = info.value, context.next = delegate.nextLoc, "return" !== context.method && (context.method = "next", context.arg = undefined), context.delegate = null, ContinueSentinel) : info : (context.method = "throw", context.arg = new TypeError("iterator result is not an object"), context.delegate = null, ContinueSentinel); } function pushTryEntry(locs) { var entry = { tryLoc: locs[0] }; 1 in locs && (entry.catchLoc = locs[1]), 2 in locs && (entry.finallyLoc = locs[2], entry.afterLoc = locs[3]), this.tryEntries.push(entry); } function resetTryEntry(entry) { var record = entry.completion || {}; record.type = "normal", delete record.arg, entry.completion = record; } function Context(tryLocsList) { this.tryEntries = [{ tryLoc: "root" }], tryLocsList.forEach(pushTryEntry, this), this.reset(!0); } function values(iterable) { if (iterable) { var iteratorMethod = iterable[iteratorSymbol]; if (iteratorMethod) return iteratorMethod.call(iterable); if ("function" == typeof iterable.next) return iterable; if (!isNaN(iterable.length)) { var i = -1, next = function next() { for (; ++i < iterable.length;) { if (hasOwn.call(iterable, i)) return next.value = iterable[i], next.done = !1, next; } return next.value = undefined, next.done = !0, next; }; return next.next = next; } } return { next: doneResult }; } function doneResult() { return { value: undefined, done: !0 }; } return GeneratorFunction.prototype = GeneratorFunctionPrototype, define(Gp, "constructor", GeneratorFunctionPrototype), define(GeneratorFunctionPrototype, "constructor", GeneratorFunction), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, toStringTagSymbol, "GeneratorFunction"), exports.isGeneratorFunction = function (genFun) { var ctor = "function" == typeof genFun && genFun.constructor; return !!ctor && (ctor === GeneratorFunction || "GeneratorFunction" === (ctor.displayName || ctor.name)); }, exports.mark = function (genFun) { return Object.setPrototypeOf ? Object.setPrototypeOf(genFun, GeneratorFunctionPrototype) : (genFun.__proto__ = GeneratorFunctionPrototype, define(genFun, toStringTagSymbol, "GeneratorFunction")), genFun.prototype = Object.create(Gp), genFun; }, exports.awrap = function (arg) { return { __await: arg }; }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, asyncIteratorSymbol, function () { return this; }), exports.AsyncIterator = AsyncIterator, exports.async = function (innerFn, outerFn, self, tryLocsList, PromiseImpl) { void 0 === PromiseImpl && (PromiseImpl = Promise); var iter = new AsyncIterator(wrap(innerFn, outerFn, self, tryLocsList), PromiseImpl); return exports.isGeneratorFunction(outerFn) ? iter : iter.next().then(function (result) { return result.done ? result.value : iter.next(); }); }, defineIteratorMethods(Gp), define(Gp, toStringTagSymbol, "Generator"), define(Gp, iteratorSymbol, function () { return this; }), define(Gp, "toString", function () { return "[object Generator]"; }), exports.keys = function (object) { var keys = []; for (var key in object) { keys.push(key); } return keys.reverse(), function next() { for (; keys.length;) { var key = keys.pop(); if (key in object) return next.value = key, next.done = !1, next; } return next.done = !0, next; }; }, exports.values = values, Context.prototype = { constructor: Context, reset: function reset(skipTempReset) { if (this.prev = 0, this.next = 0, this.sent = this._sent = undefined, this.done = !1, this.delegate = null, this.method = "next", this.arg = undefined, this.tryEntries.forEach(resetTryEntry), !skipTempReset) for (var name in this) { "t" === name.charAt(0) && hasOwn.call(this, name) && !isNaN(+name.slice(1)) && (this[name] = undefined); } }, stop: function stop() { this.done = !0; var rootRecord = this.tryEntries[0].completion; if ("throw" === rootRecord.type) throw rootRecord.arg; return this.rval; }, dispatchException: function dispatchException(exception) { if (this.done) throw exception; var context = this; function handle(loc, caught) { return record.type = "throw", record.arg = exception, context.next = loc, caught && (context.method = "next", context.arg = undefined), !!caught; } for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i], record = entry.completion; if ("root" === entry.tryLoc) return handle("end"); if (entry.tryLoc <= this.prev) { var hasCatch = hasOwn.call(entry, "catchLoc"), hasFinally = hasOwn.call(entry, "finallyLoc"); if (hasCatch && hasFinally) { if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0); if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc); } else if (hasCatch) { if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0); } else { if (!hasFinally) throw new Error("try statement without catch or finally"); if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc); } } } }, abrupt: function abrupt(type, arg) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.tryLoc <= this.prev && hasOwn.call(entry, "finallyLoc") && this.prev < entry.finallyLoc) { var finallyEntry = entry; break; } } finallyEntry && ("break" === type || "continue" === type) && finallyEntry.tryLoc <= arg && arg <= finallyEntry.finallyLoc && (finallyEntry = null); var record = finallyEntry ? finallyEntry.completion : {}; return record.type = type, record.arg = arg, finallyEntry ? (this.method = "next", this.next = finallyEntry.finallyLoc, ContinueSentinel) : this.complete(record); }, complete: function complete(record, afterLoc) { if ("throw" === record.type) throw record.arg; return "break" === record.type || "continue" === record.type ? this.next = record.arg : "return" === record.type ? (this.rval = this.arg = record.arg, this.method = "return", this.next = "end") : "normal" === record.type && afterLoc && (this.next = afterLoc), ContinueSentinel; }, finish: function finish(finallyLoc) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.finallyLoc === finallyLoc) return this.complete(entry.completion, entry.afterLoc), resetTryEntry(entry), ContinueSentinel; } }, "catch": function _catch(tryLoc) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.tryLoc === tryLoc) { var record = entry.completion; if ("throw" === record.type) { var thrown = record.arg; resetTryEntry(entry); } return thrown; } } throw new Error("illegal catch attempt"); }, delegateYield: function delegateYield(iterable, resultName, nextLoc) { return this.delegate = { iterator: values(iterable), resultName: resultName, nextLoc: nextLoc }, "next" === this.method && (this.arg = undefined), ContinueSentinel; } }, exports; }
-
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
-
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
-
-
-var state = {
-  room: null
-};
-var getters = {
-  StateRoom: function StateRoom(state) {
-    return state.room;
-  }
-};
-var actions = {
-  CreateRoom: function CreateRoom(_ref, rom) {
-    return _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
-      var dispatch;
-      return _regeneratorRuntime().wrap(function _callee$(_context) {
-        while (1) {
-          switch (_context.prev = _context.next) {
-            case 0:
-              dispatch = _ref.dispatch;
-              _context.next = 3;
-              return axios__WEBPACK_IMPORTED_MODULE_0__["default"].post('/tambah/room', rom);
-
-            case 3:
-              _context.next = 5;
-              return dispatch('GetRoom');
-
-            case 5:
-            case "end":
-              return _context.stop();
-          }
-        }
-      }, _callee);
-    }))();
-  },
-  GetRoom: function GetRoom(_ref2) {
-    return _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee2() {
-      var commit, response;
-      return _regeneratorRuntime().wrap(function _callee2$(_context2) {
-        while (1) {
-          switch (_context2.prev = _context2.next) {
-            case 0:
-              commit = _ref2.commit;
-              _context2.next = 3;
-              return axios__WEBPACK_IMPORTED_MODULE_0__["default"].get('room');
-
-            case 3:
-              response = _context2.sent;
-              commit('setRoom', response.data);
-
-            case 5:
-            case "end":
-              return _context2.stop();
-          }
-        }
-      }, _callee2);
-    }))();
-  },
-  EditRoom: function EditRoom(_ref3, rom) {
-    return _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee3() {
-      var dispatch;
-      return _regeneratorRuntime().wrap(function _callee3$(_context3) {
-        while (1) {
-          switch (_context3.prev = _context3.next) {
-            case 0:
-              dispatch = _ref3.dispatch;
-              _context3.next = 3;
-              return axios__WEBPACK_IMPORTED_MODULE_0__["default"].post('/update/room', rom);
-
-            case 3:
-              _context3.next = 5;
-              return dispatch('GetRoom');
-
-            case 5:
-            case "end":
-              return _context3.stop();
-          }
-        }
-      }, _callee3);
-    }))();
-  },
-  DeleteRoom: function DeleteRoom(_ref4, id) {
-    return _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee4() {
-      var dispatch;
-      return _regeneratorRuntime().wrap(function _callee4$(_context4) {
-        while (1) {
-          switch (_context4.prev = _context4.next) {
-            case 0:
-              dispatch = _ref4.dispatch;
-              _context4.next = 3;
-              return axios__WEBPACK_IMPORTED_MODULE_0__["default"]["delete"]("/hapus/room/".concat(id));
-
-            case 3:
-              _context4.next = 5;
-              return dispatch('GetRoom');
-
-            case 5:
-            case "end":
-              return _context4.stop();
-          }
-        }
-      }, _callee4);
-    }))();
-  }
-};
-var mutations = {
-  setRoom: function setRoom(state, room) {
-    state.room = room;
   } // DeleteBarang({dispatch}, id) {
   //     axios.delete(`hapus/barang/${id}`)
   //     dispatch('GetBarang')
@@ -76599,7 +76086,7 @@ module.exports = JSON.parse('{"dashboard":"仪表盘","sales":"销售量","analy
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames based on template
-/******/ 			return "js/chunks/" + chunkId + "." + {"index2":"ef3b91661acab64d","components-tabs":"7beeed2c289124de","components-accordions":"f44b901551bf002b","components-modals":"d208cc0404ef314d","components-cards":"d0cf76f36c573d65","components-carousel":"f71ea95251e3b488","components-timeline":"a36dd3832e5c1cd8","components-media-object":"2aa40d2ab16e5c63","components-list-group":"09bdbb25cfa37092","components-pricing-table":"4a5725ab96c7878d","components-notifications":"0e58a2c0d0da9f9d","components-lightbox":"e6c44d9baaf7c349","components-countdown":"8d98d19ace09bde7","components-counter":"08cfb2ceab824edc","components-sweetalert":"d50c1b115251b430","font-icons":"afc0d2e18b5af2e7","pages-helpdesk":"ec0d33b3f996d523","pages-contact-us":"81044736fb203edb","pages-faq":"035eb3e0a3730d03","pages-faq2":"c72a548bb3fec9e9","pages-privacy-policy":"6407fae26ca30c56","pages-coming-soon":"177688c28d54ad66","pages-error404":"822a077ac78113cf","pages-error500":"4542921f0dfc0cf7","pages-error503":"06e6a03370ca23eb","pages-maintenence":"56c0c23f9a76c8b9","pages-blank-page":"70114ee3baad53e8","pages-sample":"adf3300a3c1ea5d0","auth-login-boxed":"2645af5f836b9b76","auth-register-boxed":"e37a40653addefbf","auth-lockscreen-boxed":"b17ed328d6ffd819","auth-pass-recovery-boxed":"37a102f8bfb6b30b","auth-login":"0ba2daf9a43207ff","auth-register":"3284e48031bedec2","auth-lockscreen":"1427a56fd36fe4e9","auth-pass-recovery":"9d8cb0bfa0c3592e","elements-alerts":"977bd160ab7d3bde","elements-avatar":"d276ab43a2895c63","elements-badges":"7af7652f3d012aaf","elements-breadcrumbs":"d6f4b012a957986a","elements-buttons":"cb8636c4ea89c2a8","elements-buttons-group":"2aaa9899ec8277d5","elements-color-library":"83379671c770b129","elements-dropdown":"94e35d1413f53af4","elements-infobox":"d5a9eaf193d97162","elements-jumbotron":"465d278b80094b12","elements-loader":"1c6916c3fa8a3087","elements-pagination":"da601118b95bae7e","elements-popovers":"f29211bb96a4e690","elements-progress-bar":"e49c355be4f50830","elements-search":"ea5153c4d6bdbc66","elements-tooltips":"5ebfa4ea60327f97","elements-treeview":"aace2a663c024bc2","elements-typography":"967816a72660a896","tables":"a50f662f6e692a76","users-profile":"9f5be494ca17e61f","users-account-setting":"bae2d7f2f2a7711e","dragndrop":"9b05566f021c80ed","charts-apex-chart":"b427bae5a6014cfa","widgets":"ff28d7398612423c","forms-basic":"15e6f767167f9f74","forms-input-group":"cf992aef897e81af","forms-layouts":"8eeda156173e9364","forms-validation":"9ea793a8948bb3cd","forms-checkbox-radio":"28055c5694232ee8","forms-switches":"4d8c42939fe1f6cf","forms-wizards":"9bedad8669398c64","forms-file-upload":"7a54d56729e44835","forms-clipboard":"b539fc115a17330e","forms-date-picker":"727c3c1641e7ae1c","forms-input-mask":"bd56acebe2a830a8","forms-quill-editor":"2690928e1c96e79f","forms-touchspin":"4b02f6b31a90af18","forms-markdown-editor":"6ef2f59f2abfcd6b","forms-select2":"bfd4c77e5eddc5d8","apps-chat":"859b52282528a2a6","apps-mailbox":"4819be38a290057c","apps-todo-list":"c6bbe0b13b8c701d","apps-contacts":"f2c29decb58c296b","apps-notes":"d43c148039c67203","apps-scrumboard":"c5e4ef5bb7900f7c","apps-calendar":"ce8a20a5d3faa244","apps-invoice-list":"6cbd7e60b3468f57","apps-invoice-preview":"b7873ba57cf1cc1b","apps-invoice-add":"b46d80d17a0ddd14","apps-invoice-edit":"717262a7832b07a5","tables-basic":"2b607dbcd05fadc6","tables-striped":"a3b7fdacebb237c6","tables-order-sorting":"1805c5cb4e591bab","tables-multi-column":"36f20bd39db4495d","tables-multiple-tables":"5c8f3716a996ff6a","tables-alt-pagination":"e67f6c6a0067a81e","tables-custom":"93ca676c305adcdd","tables-range-search":"716b75f4e37304c6","tables-export":"970964b05f67ddd0","tables-live-dom-ordering":"5fc44a3b98fb27e3","tables-miscellaneous":"560cc840d2c0f886","node_modules_html2canvas_dist_html2canvas_js":"5475dc17eb928a5a","node_modules_dompurify_dist_purify_js":"9dabfec756329575","node_modules_canvg_lib_index_es_js":"84de45b397df7f27"}[chunkId] + ".js";
+/******/ 			return "js/chunks/" + chunkId + "." + {"index2":"ef3b91661acab64d","components-tabs":"bb605365494aef98","components-accordions":"f44b901551bf002b","components-modals":"d208cc0404ef314d","components-cards":"d0cf76f36c573d65","components-carousel":"f71ea95251e3b488","components-timeline":"a36dd3832e5c1cd8","components-media-object":"2aa40d2ab16e5c63","components-list-group":"09bdbb25cfa37092","components-pricing-table":"4a5725ab96c7878d","components-notifications":"0e58a2c0d0da9f9d","components-lightbox":"e6c44d9baaf7c349","components-countdown":"8d98d19ace09bde7","components-counter":"08cfb2ceab824edc","components-sweetalert":"d50c1b115251b430","font-icons":"afc0d2e18b5af2e7","pages-helpdesk":"ec0d33b3f996d523","pages-contact-us":"81044736fb203edb","pages-faq":"035eb3e0a3730d03","pages-faq2":"c72a548bb3fec9e9","pages-privacy-policy":"6407fae26ca30c56","pages-coming-soon":"177688c28d54ad66","pages-error404":"822a077ac78113cf","pages-error500":"4542921f0dfc0cf7","pages-error503":"06e6a03370ca23eb","pages-maintenence":"56c0c23f9a76c8b9","pages-blank-page":"70114ee3baad53e8","pages-sample":"adf3300a3c1ea5d0","auth-login-boxed":"9e7875a43721e3ef","auth-register-boxed":"e37a40653addefbf","auth-lockscreen-boxed":"b17ed328d6ffd819","auth-pass-recovery-boxed":"37a102f8bfb6b30b","auth-login":"0ba2daf9a43207ff","auth-register":"3284e48031bedec2","auth-lockscreen":"1427a56fd36fe4e9","auth-pass-recovery":"9d8cb0bfa0c3592e","elements-alerts":"977bd160ab7d3bde","elements-avatar":"d276ab43a2895c63","elements-badges":"7af7652f3d012aaf","elements-breadcrumbs":"d6f4b012a957986a","elements-buttons":"cb8636c4ea89c2a8","elements-buttons-group":"2aaa9899ec8277d5","elements-color-library":"83379671c770b129","elements-dropdown":"94e35d1413f53af4","elements-infobox":"d5a9eaf193d97162","elements-jumbotron":"465d278b80094b12","elements-loader":"1c6916c3fa8a3087","elements-pagination":"da601118b95bae7e","elements-popovers":"f29211bb96a4e690","elements-progress-bar":"e49c355be4f50830","elements-search":"ae3c997833225c07","elements-tooltips":"5ebfa4ea60327f97","elements-treeview":"aace2a663c024bc2","elements-typography":"967816a72660a896","tables":"6e6671613e1bd8dd","users-profile":"9f5be494ca17e61f","users-account-setting":"bae2d7f2f2a7711e","dragndrop":"9b05566f021c80ed","charts-apex-chart":"b427bae5a6014cfa","widgets":"ff28d7398612423c","forms-basic":"15e6f767167f9f74","forms-input-group":"cf992aef897e81af","forms-layouts":"8eeda156173e9364","forms-validation":"9ea793a8948bb3cd","forms-checkbox-radio":"28055c5694232ee8","forms-switches":"4d8c42939fe1f6cf","forms-wizards":"9bedad8669398c64","forms-file-upload":"7a54d56729e44835","forms-clipboard":"b539fc115a17330e","forms-date-picker":"727c3c1641e7ae1c","forms-input-mask":"bd56acebe2a830a8","forms-quill-editor":"2690928e1c96e79f","forms-touchspin":"4b02f6b31a90af18","forms-markdown-editor":"6ef2f59f2abfcd6b","forms-select2":"bfd4c77e5eddc5d8","apps-chat":"acc7e14bd08f5ded","apps-mailbox":"ee60bec93736ab71","apps-todo-list":"c6bbe0b13b8c701d","apps-contacts":"044a03476d991799","apps-notes":"d43c148039c67203","apps-scrumboard":"c5e4ef5bb7900f7c","apps-calendar":"ce8a20a5d3faa244","apps-invoice-list":"e8278f330222c6d2","apps-invoice-preview":"b7873ba57cf1cc1b","apps-invoice-add":"101d3d4233240ada","apps-invoice-edit":"a9f762e6824f1226","tables-basic":"2b607dbcd05fadc6","tables-striped":"a3b7fdacebb237c6","tables-order-sorting":"1805c5cb4e591bab","tables-multi-column":"b4cafe31dfebc4f4","tables-multiple-tables":"5c8f3716a996ff6a","tables-alt-pagination":"e67f6c6a0067a81e","tables-custom":"41b8a8343de50e82","tables-range-search":"716b75f4e37304c6","tables-export":"c182b567a91bdcf5","tables-live-dom-ordering":"5fc44a3b98fb27e3","tables-miscellaneous":"e8340d9fd192450a","node_modules_html2canvas_dist_html2canvas_js":"5475dc17eb928a5a","node_modules_dompurify_dist_purify_js":"9dabfec756329575","node_modules_canvg_lib_index_es_js":"84de45b397df7f27"}[chunkId] + ".js";
 /******/ 		};
 /******/ 	})();
 /******/ 	

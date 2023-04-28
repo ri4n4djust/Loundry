@@ -10,7 +10,7 @@
                         </router-link>
                     </li>
                     <li class="nav-item theme-text">
-                        <router-link to="/" class="nav-link"> SPBU </router-link>
+                        <router-link to="/" class="nav-link"> Loundry </router-link>
                     </li>
                 </ul>
                 <div class="d-none horizontal-menu">
@@ -123,20 +123,11 @@
                         </a>
                     </div>
 
-                    <!-- <div class="dropdown nav-item language-dropdown btn-group">
-                        <a href="javascript:;" id="ddllang" data-bs-toggle="dropdown" aria-expanded="false" class="btn dropdown-toggle btn-icon-only nav-link">
-                            <img v-if="selectedLang" :src="require(`@/assets/images/flags/${selectedLang.code}.png`)" class="flag-width" alt="flag" />
+                    <div class="navbar-item flex-row ms-md-auto">
+                        <a href="javascript:;" class="d-flex align-items-center" >
+                            <span class="ms-2">{{ $store.getters.StateCabang.nama_cabang }}</span>
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="ddllang">
-                            <perfect-scrollbar>
-                                <li v-for="item in countryList" :key="item.code">
-                                    <a href="javascript:;" class="dropdown-item d-flex align-items-center" :class="{ active: $i18n.locale === item.code }" @click.prevent="changeLanguage(item)">
-                                        <img :src="require(`@/assets/images/flags/${item.code}.png`)" class="flag-width" alt="" /> <span>{{ item.name }}</span>
-                                    </a>
-                                </li>
-                            </perfect-scrollbar>
-                        </ul>
-                    </div> -->
+                    </div>
 
                     <!-- <div class="dropdown nav-item message-dropdown btn-group">
                         <a href="javascript:;" id="ddlmsg" data-bs-toggle="dropdown" aria-expanded="false" class="btn dropdown-toggle btn-icon-only nav-link">
@@ -389,7 +380,7 @@
                                         <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
                                         <circle cx="12" cy="7" r="4"></circle>
                                     </svg>
-                                    Profile
+                                    Profile {{ $store.getters.StateCabang }}
                                 </router-link>
                             </li>
                             <li role="presentation">

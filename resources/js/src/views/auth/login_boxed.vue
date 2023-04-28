@@ -11,7 +11,7 @@
                                 </div>
                             </div>
                             <h1 class="">Sign In</h1>
-                            <p class="">Log in to your account to continue.</p>
+                            <p class="">Log in to your account to continue</p>
 
                             <form class="text-start">
                                 <div class="form">
@@ -172,7 +172,7 @@
             store.dispatch('LogIn', form.value)
             .then(response => {
                 // console.log('result: ', response)
-                router.push({path: '/bbm'})
+                router.push({path: '/index2'})
             })
             .catch(error => {
                 // console.log('error: ', error)

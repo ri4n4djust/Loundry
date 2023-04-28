@@ -3,11 +3,13 @@ import axios from 'axios';
 const state = {
     user: localStorage.getItem('userLogin'),
     token: localStorage.getItem('tokenLogin'),
+    cabang: []
   };
   
 const getters = {
     isAuthenticated: state => !!state.token,    
     StateUser: state => state.user,
+    StateCabang: state => state.cabang
 
 };
 
@@ -21,8 +23,9 @@ const actions = {
         await dispatch('LogIn', UserForm)
     },
     async LogIn({commit}, User) {
+        let response
         try {
-            const response = await axios.post('/api/login', User)
+            response = await axios.post('/api/login', User)
             await commit('setUser', response.data.user)
             const toast = window.Swal.mixin({
                 toast: true,
@@ -39,10 +42,13 @@ const actions = {
             axios.defaults.headers.common['Authorization'] = 'Bearer '+response.data.token;
             localStorage.setItem('tokenLogin', response.data.token)
             localStorage.setItem('userLogin', JSON.stringify(response.data.user))
+            localStorage.setItem('cabangLogin', JSON.stringify(response.data.cabang))
             commit('setToken', response.data.token)
+            commit('setCabang', response.data.cabang)
             return response
         } catch (error) {
             // Handle error
+            // console.log(error.response.data.message)
             const toast =  window.Swal.mixin({
                 toast: true,
                 position: 'top-center',
@@ -52,7 +58,7 @@ const actions = {
             });
             toast.fire({
                 title: 'Error!',
-                text: 'Username atau password salah',
+                text: error.response.data.message,
                 icon: 'error',
                 // confirmButtonText: 'Cool',
                 padding: '2em'
@@ -76,6 +82,9 @@ const mutations = {
     },
     setToken(state, token){
         state.token = token
+    },
+    setCabang(state, cbg){
+        state.cabang = cbg
     },
     LogOut(state){
         state.user = [];

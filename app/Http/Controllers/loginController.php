@@ -8,6 +8,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Validator;
 use Auth;
+use Illuminate\Support\Facades\DB;
 
 
 
@@ -21,24 +22,53 @@ class loginController extends Controller
             'password' => 'required',
         ]);
 
-        $user= User::where('email', $request->email)->first();
+        $usr = substr($request->email, 0,strpos($request->email, "@"));
+        $cabang = substr($request->email, strpos($request->email, "@") + 1);
+
+        $user= User::where('email', $usr)->first();
+        $kntr_cabang = DB::table('tblcabang')->where('kode_cabang', $cabang)->first();
         
             if (!$user || !Hash::check($request->password, $user->password)) {
                 return response([
                     'success'   => false,
-                    'message' => ['These credentials do not match our records.']
+                    'message' => 'User tidak di temukan atau password salah.'
                 ], 404);
+            }else{
+                
+                if(!$kntr_cabang){
+                    return response([
+                        'success'   => false,
+                        'message' => 'kantor tidak terdaftar.'
+                    ], 404);
+                    
+                }else{
+                    $token = $user->createToken('ApiToken')->plainTextToken;
+                    $response = [
+                        'success'   => true,
+                        'user'      => $user,
+                        'cabang'    => $kntr_cabang,
+                        'token'     => $token
+                    ];
+                    return response($response, 201);
+                }
+
             }
-        
-            $token = $user->createToken('ApiToken')->plainTextToken;
-        
-            $response = [
-                'success'   => true,
-                'user'      => $user,
-                'token'     => $token
-            ];
-        
-        return response($response, 201);
+            
+            // }else if(!!$kntr_cabang){
+            //     return response([
+            //         'success'   => false,
+            //         'message' => 'kantor tidak terdaftar.'
+            //     ], 404);
+                
+            // }else{
+            //     $token = $user->createToken('ApiToken')->plainTextToken;
+            //     $response = [
+            //         'success'   => true,
+            //         'user'      => $user,
+            //         'token'     => $token
+            //     ];
+            //     return response($response, 201);
+            // }
     }
 
     
