@@ -4,9 +4,9 @@ import i18n from '../i18n';
 import auth from './auth';
 import barang from './barang';
 import pelanggan from './pelanggan';
-import room from './room';
+// import room from './room';
 // import kode from './kode';
-import bbm from './bbm';
+// import bbm from './bbm';
 import nosel from './nosel';
 import transnosel from './transnosel';
 import transaksi from './transaksi';
@@ -119,8 +119,8 @@ export default new createStore({
         barang,
         pelanggan,
         // kode,
-        room,
-        bbm,
+        // room,
+        // bbm,
         nosel,
         transnosel,
         transaksi,
