@@ -23,10 +23,10 @@
                             <div class="invoice-content">
                                 <div class="invoice-detail-body">
                                     <div class="invoice-detail-title">
-                                       
-                                        <div class="invoice-title">
+                                       Order Baru
+                                        <!-- <div class="invoice-title">
                                             Invoice Penjualan
-                                        </div>
+                                        </div> -->
                                     </div>
 
                                     <div class="invoice-detail-header">
@@ -35,35 +35,18 @@
 
                                                 <div class="invoice-address-company-fields">
                                                     <div class="form-group row">
-                                                        <label for="company-name" class="col-sm-3 col-form-label col-form-label-sm">No Nota</label>
                                                         <div class="col-sm-9">
                                                             <input type="text" v-model="params.noNota" id="number" class="form-control form-control-sm" placeholder="#0001" disabled />
                                                         </div>
                                                     </div>
 
                                                     <div class="form-group row">
-                                                        <label for="company-email" class="col-sm-3 col-form-label col-form-label-sm">Tgl</label>
                                                         <div class="col-sm-9">
                                                             <flat-pickr v-model="params.tglNota" class="form-control form-control-sm flatpickr active" placeholder="Invoice Date"></flat-pickr>
                                                         </div>
                                                     </div>
 
-                                                    <div class="form-group row">
-                                                        <label for="company-address" class="col-sm-3 col-form-label col-form-label-sm">Term</label>
-                                                        <div class="col-sm-9">
-                                                            <select id="inputState" v-model="params.term" class="form-select">
-                                                                <option value="0" selected>Cash</option>
-                                                                <option value="1">Kredit</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="form-group row">
-                                                        <label for="company-phone" class="col-sm-3 col-form-label col-form-label-sm">Jatuh Tempo</label>
-                                                        <div class="col-sm-9">
-                                                            <flat-pickr v-model="params.jthTempo" class="form-control form-control-sm flatpickr active" placeholder="Due Date"></flat-pickr>
-                                                        </div>
-                                                    </div>
+                                                   
                                                 </div>
                                             </div>
 
@@ -71,7 +54,6 @@
 
                                                 <div class="invoice-address-client-fields">
                                                     <div class="form-group row">
-                                                        <label for="client-name" class="col-sm-3 col-form-label col-form-label-sm">Pelanggan</label>
                                                         <div class="col-sm-9">
                                                             <multiselect 
                                                                 v-model="paramspelanggan" 
@@ -90,14 +72,12 @@
                                                     </div>
 
                                                     <div class="form-group row">
-                                                        <label for="client-address" class="col-sm-3 col-form-label col-form-label-sm">Address</label>
                                                         <div class="col-sm-9">
                                                             <input type="text" v-model="paramspelanggan.almtPelanggan" id="client-address" class="form-control form-control-sm" placeholder="XYZ Street" />
                                                         </div>
                                                     </div>
 
                                                     <div class="form-group row">
-                                                        <label for="client-phone" class="col-sm-3 col-form-label col-form-label-sm">Phone</label>
                                                         <div class="col-sm-9">
                                                             <input type="text" v-model="paramspelanggan.noHpPelanggan" id="client-phone" class="form-control form-control-sm" placeholder="(123) 456 789" />
                                                         </div>
@@ -109,20 +89,7 @@
 
                                     <div class="invoice-detail-items">
                                         <div class="row">
-                                            <div class="form-group col-md-3">
-                                                <label for="inputCity">NAMA BARANG</label>
-                                                <multiselect 
-                                                    v-model="brg" 
-                                                    :options="penjualan.barangs" 
-                                                    :searchable="true"
-                                                    track-by="nmBarang"
-                                                    label="nmBarang"
-                                                    open-direction="top"
-                                                    placeholder="Choose..." 
-                                                    selected-label="" 
-                                                    select-label="" >
-                                                </multiselect>
-                                            </div>
+                                            
                                             <div class="form-group col-md-2">
                                                 <label for="inputState">HARGA</label>
                                                 <input type="text" v-model="brg.hrgJual" class="form-control form-control-sm" placeholder="Price" @keypress="onlyNumber" />
@@ -140,50 +107,11 @@
                                                 <!-- {{ new Intl.NumberFormat().format(brg.hrgJual * qty) }} -->
                                                 <input type="text" v-model="tot" class="form-control form-control-sm" placeholder="Quantity" @keypress="onlyNumber" />
                                             </div>
-                                            <div class="form-group col-md-1">
-                                                <label for="aksi">Aksi</label>
-                                                <button @click="addToCart(brg)" class="btn btn-xs btn-primary">
-                                                    + 
-                                                </button>
-                                            </div>
+                                            
                                         </div>
                                     </div>
 
-                                    <div class="invoice-detail-items">
-                                        <div class="inv--product-table-section">
-                                            <div class="table-responsive">
-                                                <table class="table table-hover table-bordered item-table">
-                                                    <thead>
-                                                        <tr>
-                                                            <th>Nama Barang</th>
-                                                            <th>Harga</th>
-                                                            <th>Qty</th>
-                                                            <th>Satuan</th>
-                                                            <th>Total</th>
-                                                            <th>Aksi</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr v-for="item in cartItemsPen" :key="item.kdBarang">
-                                                            <td class="description">{{ item.nmBarang }}</td>
-                                                            <td class="rate">{{ new Intl.NumberFormat().format(item.hrgJual) }}</td>
-                                                            <td class="qty">{{ item.qty }}</td>
-                                                            <td class="qty">{{ item.satuan }}</td>
-                                                            <td class="amount">{{ new Intl.NumberFormat().format(item.total) }}</td>
-                                                            <td class="tax">
-                                                                <button type="button" class="btn btn-secondary additem btn-sm" @click="removeItem(id=item.kdBarang)">Hapus</button>
-                                                                <!-- <div class="icon-container">
-                                                                    <i data-feather="trash"></i><span class="icon-name"> trash</span>
-                                                                </div> -->
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-
-                                        <!-- <button type="button" class="btn btn-secondary additem btn-sm" @click="add_item()">Add Item</button> -->
-                                    </div>
+                                    
 
                                     
 

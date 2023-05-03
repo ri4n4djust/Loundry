@@ -100,6 +100,7 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::post('/detail/pobbm', [App\Http\Controllers\laporanController::class, 'detailPobbm']);
 
     //==========PENOMORAN=============
+    Route::post('/kdorder', [App\Http\Controllers\nomorController::class, 'kodeOrder']);
     Route::get('/kdbarang', [App\Http\Controllers\nomorController::class, 'kodeBarang']);
     Route::get('/kdsupplier', [App\Http\Controllers\nomorController::class, 'kodeSupplier']);
     Route::get('/kdpembelian', [App\Http\Controllers\nomorController::class, 'kodePembelian']);

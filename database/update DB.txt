@@ -15,3 +15,7 @@ ALTER TABLE `tblpobbm_detail` ADD `pph` DECIMAL(13,2) NOT NULL AFTER `qty_reciev
 // ALTER TABLE `tblbbm` CHANGE `accid_hpp` `accid` VARCHAR(10) CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL;
 
 // ALTER TABLE `tblpobbm` ADD `pph` DECIMAL(13,2) NOT NULL AFTER `tax`;
+
+db online
+DB_USERNAME=winf1521_root
+DB_PASSWORD=Adjust140886

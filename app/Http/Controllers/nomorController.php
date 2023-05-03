@@ -22,6 +22,49 @@ use Illuminate\Support\Facades\DB;
 class nomorController extends Controller
 {
     //
+    public function kodeOrder(Request $request)
+    {
+        $tahun = $request->input('cabang'); //date('Y');
+        $count = Penjualan::all();
+        if($count->isEmpty()){
+            
+            
+            $post = 'INV'.$tahun.'00'.'1';
+            return response()->json([
+                'success' => true,
+                'message' => 'Detail Post!',
+                'kdPenjualan'    => $post,
+                // 'panjang' => $newid
+            ], 200);
+        }else{
+            $no = 0 ;
+            $count = Penjualan::all()->last();
+            $terakhir = substr($count->noPenjualan, 7);
+            $kodeBaru = $terakhir + 1  ;
+
+            // $tahun = date('Y');
+            $post = 'INV'.$tahun.'00'.$kodeBaru;
+            
+
+            if (Penjualan::where('noPenjualan', $post)->exists()) {
+                $kodeBarulagi = $kodeBaru + 1 ;
+                $post = 'INV'.$tahun.'00'.$kodeBarulagi;
+                return response()->json([
+                    'success' => true,
+                    'message' => 'Detail Post!',
+                    'kdPenjualan'    => $post,
+                    // 'panjang' => $newid
+                ], 200);
+            } else {
+                return response()->json([
+                    'success' => true,
+                    'message' => 'Post Tidak Ditemukan!',
+                    'kdPenjualan'    => $post,
+                    // 'panjang' => $newid
+                ], 200);
+            }
+        }
+    }
     public function kodePenjualan()
     {
        
