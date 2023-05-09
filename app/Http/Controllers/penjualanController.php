@@ -93,94 +93,94 @@ class penjualanController extends Controller
                         'updated_at' => \Carbon\Carbon::now()->toDateTimeString()
                     ];
 
-                    //========insert kartu stok
-                    $total_jual = $detpem[$i]['total'];
-                    $stok_awal = $oldStok ; // DB::table('tblpersediaan')->select('stokPersediaan')->where('kdPersediaan', $kdBarang)->first()->stokPersediaan;
-                    $stok_akhir = $oldStok - $qty ;
-                    insert_kartustok_jual($noNota,$kdBarang,$tglNota,$stok_awal,$qty,$total_jual,$stok_akhir);
-                    //====================end kartu stok
+                    // //========insert kartu stok
+                    // $total_jual = $detpem[$i]['total'];
+                    // $stok_awal = $oldStok ; // DB::table('tblpersediaan')->select('stokPersediaan')->where('kdPersediaan', $kdBarang)->first()->stokPersediaan;
+                    // $stok_akhir = $oldStok - $qty ;
+                    // insert_kartustok_jual($noNota,$kdBarang,$tglNota,$stok_awal,$qty,$total_jual,$stok_akhir);
+                    // //====================end kartu stok
 
 
-                    //===========jurnal
-                    $accid = $detpem[$i]['accid']; // acc id yg di debet
-                    $acc_id_d = $detpem[$i]['accid_persediaan']; // acc id yg di debet
-                    $acc_hpp = $detpem[$i]['accid_hpp'];
-                    $acc_id_k = '11110'; // $request[0]['subtotal']; // acc id yg di kredit
-                    $acc = '32300';
-                    $acc_pph = '23100'; // acc hutang pph
-                    $memo = 'Penjualan-Barang';
-                    $jurnal = 'JK';
-                    $subtotal = $detpem[$i]['total'];
-                    $subtotal_hpp = $detpem[$i]['totalhpp'];
-                    //===jumlah pph
-                    $bati = $subtotal - $subtotal_hpp ;
-                    $pph22_dibayar = $bati * $pph22 / 100 ;
-                    //====endjumalh pph
-                    insert_gl($noNota,$tglNota,$subtotal,$memo,$jurnal);
-                    $rgl = DB::table('general_ledger')->get()->last()->notrans;
-                    $ac = [
-                        [
-                            'rgl' => $rgl,
-                            'acc_id' => $accid,
-                            'debet' => $subtotal,
-                            'kredit' => 0,
-                            'trans_detail' => 'Penjualan-Barang',
-                            'void_flag' => 0,
-                        ], 
-                        [
-                            'rgl' => $rgl,
-                            'acc_id' => $acc_id_k ,
-                            'debet' => $subtotal + ($subtotal - $subtotal_hpp),
-                            'kredit' => 0,
-                            'trans_detail' => 'Penjualan-Barang',
-                            'void_flag' => 0,
-                        ],
-                        [
-                            'rgl' => $rgl,
-                            'acc_id' => $acc_id_d,
-                            'debet' => 0,
-                            'kredit' => $subtotal,
-                            'trans_detail' => 'Penjualan-Barang',
-                            'void_flag' => 0,
-                        ],
-                        [
-                            'rgl' => $rgl,
-                            'acc_id' => $acc_hpp,
-                            'debet' => $subtotal_hpp,
-                            'kredit' => 0,
-                            'trans_detail' => 'Penjualan-Barang',
-                            'void_flag' => 0,
-                        ],
-                        [
-                            'rgl' => $rgl,
-                            'acc_id' => $acc,
-                            'debet' => 0,
-                            'kredit' => $subtotal - $subtotal_hpp,
-                            'trans_detail' => 'Penjualan-Barang',
-                            'void_flag' => 0,
-                        ],
-                        // pph22
-                        [
-                            'rgl' => $rgl,
-                            'acc_id' => $acc_id_k,
-                            'debet' => 0,
-                            'kredit' => $pph22_dibayar,
-                            'trans_detail' => 'Penjualan-pph22',
-                            'void_flag' => 0,
-                        ],
-                        [
-                            'rgl' => $rgl,
-                            'acc_id' => $acc_pph,
-                            'debet' => $pph22_dibayar,
-                            'kredit' => 0,
-                            'trans_detail' => 'Penjualan-pph22',
-                            'void_flag' => 0,
-                        ]
-                        //===end pph22
-                    ];
+                    // //===========jurnal
+                    // $accid = $detpem[$i]['accid']; // acc id yg di debet
+                    // $acc_id_d = $detpem[$i]['accid_persediaan']; // acc id yg di debet
+                    // $acc_hpp = $detpem[$i]['accid_hpp'];
+                    // $acc_id_k = '11110'; // $request[0]['subtotal']; // acc id yg di kredit
+                    // $acc = '32300';
+                    // $acc_pph = '23100'; // acc hutang pph
+                    // $memo = 'Penjualan-Barang';
+                    // $jurnal = 'JK';
+                    // $subtotal = $detpem[$i]['total'];
+                    // $subtotal_hpp = $detpem[$i]['totalhpp'];
+                    // //===jumlah pph
+                    // $bati = $subtotal - $subtotal_hpp ;
+                    // $pph22_dibayar = $bati * $pph22 / 100 ;
+                    // //====endjumalh pph
+                    // insert_gl($noNota,$tglNota,$subtotal,$memo,$jurnal);
+                    // $rgl = DB::table('general_ledger')->get()->last()->notrans;
+                    // $ac = [
+                    //     [
+                    //         'rgl' => $rgl,
+                    //         'acc_id' => $accid,
+                    //         'debet' => $subtotal,
+                    //         'kredit' => 0,
+                    //         'trans_detail' => 'Penjualan-Barang',
+                    //         'void_flag' => 0,
+                    //     ], 
+                    //     [
+                    //         'rgl' => $rgl,
+                    //         'acc_id' => $acc_id_k ,
+                    //         'debet' => $subtotal + ($subtotal - $subtotal_hpp),
+                    //         'kredit' => 0,
+                    //         'trans_detail' => 'Penjualan-Barang',
+                    //         'void_flag' => 0,
+                    //     ],
+                    //     [
+                    //         'rgl' => $rgl,
+                    //         'acc_id' => $acc_id_d,
+                    //         'debet' => 0,
+                    //         'kredit' => $subtotal,
+                    //         'trans_detail' => 'Penjualan-Barang',
+                    //         'void_flag' => 0,
+                    //     ],
+                    //     [
+                    //         'rgl' => $rgl,
+                    //         'acc_id' => $acc_hpp,
+                    //         'debet' => $subtotal_hpp,
+                    //         'kredit' => 0,
+                    //         'trans_detail' => 'Penjualan-Barang',
+                    //         'void_flag' => 0,
+                    //     ],
+                    //     [
+                    //         'rgl' => $rgl,
+                    //         'acc_id' => $acc,
+                    //         'debet' => 0,
+                    //         'kredit' => $subtotal - $subtotal_hpp,
+                    //         'trans_detail' => 'Penjualan-Barang',
+                    //         'void_flag' => 0,
+                    //     ],
+                    //     // pph22
+                    //     [
+                    //         'rgl' => $rgl,
+                    //         'acc_id' => $acc_id_k,
+                    //         'debet' => 0,
+                    //         'kredit' => $pph22_dibayar,
+                    //         'trans_detail' => 'Penjualan-pph22',
+                    //         'void_flag' => 0,
+                    //     ],
+                    //     [
+                    //         'rgl' => $rgl,
+                    //         'acc_id' => $acc_pph,
+                    //         'debet' => $pph22_dibayar,
+                    //         'kredit' => 0,
+                    //         'trans_detail' => 'Penjualan-pph22',
+                    //         'void_flag' => 0,
+                    //     ]
+                    //     //===end pph22
+                    // ];
                     
-                    insert_gl_detail($ac);
-                    //===========end jurnal
+                    // insert_gl_detail($ac);
+                    // //===========end jurnal
                 }
 
                 PenjualanDetail::insert($detail);
