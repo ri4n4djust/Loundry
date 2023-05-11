@@ -27,6 +27,16 @@ class barangController extends Controller
         ], 200);
     }
 
+    public function indexPricelist()
+    {
+        $posts = DB::table('tblpricelist')->get();
+        return response([
+            'success' => true,
+            'message' => 'List Semua Harga',
+            'data' => $posts
+        ], 200);
+    }
+
     public function indexPersediaan()
     {
         $posts = Persediaan::join('tblkategori', 'tblpersediaan.ktgPersediaan', '=', 'tblkategori.kodeKtg')
