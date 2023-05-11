@@ -20,28 +20,28 @@ class penjualanController extends Controller
                 $tglNota = $request[0]['tglNota'];
                 $noNota = $request[0]['noNota'];
                 $total =  $request[0]['subtotal'];
-                $diskon = $total * $request[0]['disc'] / 100;
-                $pph22 = 10 ; //$detop[0]['pph22'];
-                $type = $request[0]['term'];
+                // $diskon = $total * $request[0]['disc'] / 100;
+                // $pph22 = 10 ; //$detop[0]['pph22'];
+                // $type = $request[0]['term'];
                 $piutang = 0;
-                if($type == '1'){
-                    $piutang = $total;
-                }
+                // if($type == '1'){
+                //     $piutang = $total;
+                // }
                 
                 $post = DB::table('tblpenjualan')->upsert([
                     'noPenjualan'     => $request[0]['noNota'],
                     'r_pelanggan'     => $request[0]['kdPelanggan'],
                     'subTotalPenjualan'     => $request[0]['subtotal'],
                     'tglPenjualan'   => $tglNota,
-                    'discPenjualan'     => $diskon,
-                    'discPercentP'     => $request[0]['disc'],
-                    'taxPenjualan'     => $request[0]['tax'],
+                    // 'discPenjualan'     => $diskon,
+                    // 'discPercentP'     => $request[0]['disc'],
+                    // 'taxPenjualan'     => $request[0]['tax'],
                     'totalPenjualan'     => $request[0]['total'],
                     'notePenjualan'     => $request[0]['notes'],
-                    'termPenjualan'     => $request[0]['term'],
-                    'jthTempo'     => $request[0]['jthTempo'],
-                    'typeBayar'     => $request[0]['term'],
-                    'piutangPenjualan'     => $piutang,
+                    // 'termPenjualan'     => $request[0]['term'],
+                    // 'jthTempo'     => $request[0]['jthTempo'],
+                    // 'typeBayar'     => $request[0]['term'],
+                    // 'piutangPenjualan'     => $piutang,
                     'created_at' => \Carbon\Carbon::now()->toDateTimeString(),
                     'updated_at' => \Carbon\Carbon::now()->toDateTimeString()
                 ],
@@ -49,13 +49,15 @@ class penjualanController extends Controller
                     'r_pelanggan'     => $request[0]['kdPelanggan'],
                     'subTotalPenjualan'     => $request[0]['subtotal'],
                     'tglPenjualan'   => $tglNota,
-                    'discPenjualan'     => $diskon,
-                    'discPercentP'     => $request[0]['disc'],
-                    'taxPenjualan'     => $request[0]['tax'],
+                    // 'discPenjualan'     => $diskon,
+                    // 'discPercentP'     => $request[0]['disc'],
+                    // 'taxPenjualan'     => $request[0]['tax'],
                     'totalPenjualan'     => $request[0]['total'],
                     'notePenjualan'     => $request[0]['notes'],
-                    'termPenjualan'     => $request[0]['term'],
-                    'jthTempo'     => $request[0]['jthTempo'],
+                    // 'termPenjualan'     => $request[0]['term'],
+                    // 'jthTempo'     => $request[0]['jthTempo'],
+                    // 'typeBayar'     => $request[0]['term'],
+                    // 'piutangPenjualan'     => $piutang,
                     'created_at' => \Carbon\Carbon::now()->toDateTimeString(),
                     'updated_at' => \Carbon\Carbon::now()->toDateTimeString()
                 ]
