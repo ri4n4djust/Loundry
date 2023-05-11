@@ -42,6 +42,7 @@ class penjualanController extends Controller
                     'jthTempo'     => $tglNota, // $request[0]['jthTempo'],
                     'typeBayar'     => 1, // $request[0]['term'],
                     'piutangPenjualan'     => $piutang,
+                    'cabangPenjualan' => $request[0]['kode_cabang'],
                     'created_at' => \Carbon\Carbon::now()->toDateTimeString(),
                     'updated_at' => \Carbon\Carbon::now()->toDateTimeString()
                 ],
@@ -58,6 +59,7 @@ class penjualanController extends Controller
                     'jthTempo'     => $tglNota, // $request[0]['jthTempo'],
                     'typeBayar'     => 1, // $request[0]['term'],
                     'piutangPenjualan'     => $piutang,
+                    'cabangPenjualan' => $request[0]['kode_cabang'],
                     'created_at' => \Carbon\Carbon::now()->toDateTimeString(),
                     'updated_at' => \Carbon\Carbon::now()->toDateTimeString()
                 ]
