@@ -68,30 +68,30 @@ class penjualanController extends Controller
                 $detpem = $request[1];
                 for ($i = 0; $i < count($detpem); $i++) {
 
-                    $kdBarang = $detpem[$i]['kdBarang'];
+                    // $kdBarang = $detpem[$i]['kdBarang'];
                     $qty = $detpem[$i]['qty'];
                     $hrg = $detpem[$i]['hrgJual'];
-                    $brg = DB::table('tblpersediaan')->where('kdPersediaan', $kdBarang)->first();
-                    $oldStok = $brg->stokPersediaan;
-                    DB::table('tblpersediaan')->where('kdPersediaan', $kdBarang)->update([
-                        'stokPersediaan' => $oldStok - $qty,
-                        'salePrice' => $hrg,
-                    ]);
-                    DB::table('tblbarang')->where('kdBarang', $kdBarang)->update([
-                        'stkBarang' => $oldStok - $qty,
-                        'hrgJual' => $hrg,
-                    ]);
+                    // $brg = DB::table('tblpersediaan')->where('kdPersediaan', $kdBarang)->first();
+                    // $oldStok = $brg->stokPersediaan;
+                    // DB::table('tblpersediaan')->where('kdPersediaan', $kdBarang)->update([
+                    //     'stokPersediaan' => $oldStok - $qty,
+                    //     'salePrice' => $hrg,
+                    // ]);
+                    // DB::table('tblbarang')->where('kdBarang', $kdBarang)->update([
+                    //     'stkBarang' => $oldStok - $qty,
+                    //     'hrgJual' => $hrg,
+                    // ]);
 
                     $detail[] = [
                         'r_noPenjualan' => $noNota,
-                        'r_kdBarang' => $kdBarang,
+                        'r_kdBarang' => $detpem[$i]['jenisOrder'],
                         'tgl_trans' => $tglNota,
-                        'r_nmBarang' => $detpem[$i]['nmBarang'],
-                        'kategori_jual' => $detpem[$i]['kategori'],
-                        'hrgJual' => $detpem[$i]['hrgJual'],
-                        'satuanJual' => $detpem[$i]['satuan'],
+                        'r_nmBarang' => $detpem[$i]['jenisOrder'],
+                        'kategori_jual' => $detpem[$i]['jenisOrder'],
+                        'hrgJual' => $detpem[$i]['harga'],
+                        'satuanJual' => 'KILO', // $detpem[$i]['satuan'],
                         'qty' => $qty,
-                        'totalHpp' => $detpem[$i]['totalhpp'],
+                        'totalHpp' => $detpem[$i]['total'],
                         'totalJual' => $detpem[$i]['total'],
                         'created_at' => \Carbon\Carbon::now()->toDateTimeString(),
                         'updated_at' => \Carbon\Carbon::now()->toDateTimeString()
