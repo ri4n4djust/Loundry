@@ -88,7 +88,7 @@ class penjualanController extends Controller
                         'tgl_trans' => $tglNota,
                         'r_nmBarang' => $detpem[$i]['jenisOrder'],
                         'kategori_jual' => $detpem[$i]['jenisOrder'],
-                        'hrgJual' => $detpem[$i]['harga'],
+                        'hrgJual' => $hrg,
                         'satuanJual' => 'KILO', // $detpem[$i]['satuan'],
                         'qty' => $qty,
                         'totalHpp' => $detpem[$i]['total'],
