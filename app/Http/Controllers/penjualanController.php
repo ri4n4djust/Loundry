@@ -20,6 +20,7 @@ class penjualanController extends Controller
                 $tglNota = $request[0]['tglNota'];
                 $noNota = $request[0]['noNota'];
                 $total =  $request[0]['total'];
+                $cabang = $request[0]['kode_cabang'];
                 $diskon = 0; // $total * $request[0]['disc'] / 100;
                 $pph22 = 10 ; //$detop[0]['pph22'];
                 $type = 1; // $request[0]['term'];
@@ -42,7 +43,7 @@ class penjualanController extends Controller
                     'jthTempo'     => $tglNota, // $request[0]['jthTempo'],
                     'typeBayar'     => 1, // $request[0]['term'],
                     'piutangPenjualan'     => $piutang,
-                    'cabangPenjualan' => $request[0]['kode_cabang'],
+                    'cabangPenjualan' => $cabang,
                     'created_at' => \Carbon\Carbon::now()->toDateTimeString(),
                     'updated_at' => \Carbon\Carbon::now()->toDateTimeString()
                 ],
@@ -59,7 +60,7 @@ class penjualanController extends Controller
                     'jthTempo'     => $tglNota, // $request[0]['jthTempo'],
                     'typeBayar'     => 1, // $request[0]['term'],
                     'piutangPenjualan'     => $piutang,
-                    'cabangPenjualan' => $request[0]['kode_cabang'],
+                    'cabangPenjualan' => $cabang,
                     'created_at' => \Carbon\Carbon::now()->toDateTimeString(),
                     'updated_at' => \Carbon\Carbon::now()->toDateTimeString()
                 ]
@@ -86,6 +87,7 @@ class penjualanController extends Controller
                         'r_noPenjualan' => $noNota,
                         'r_kdBarang' => $detpem[$i]['jenisOrder'],
                         'tgl_trans' => $tglNota,
+                        'r_cabang' => $cabang,
                         'r_nmBarang' => $detpem[$i]['jenisOrder'],
                         'kategori_jual' => $detpem[$i]['jenisOrder'],
                         'hrgJual' => $hrg,
