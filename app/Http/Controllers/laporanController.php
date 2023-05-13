@@ -27,9 +27,17 @@ class laporanController extends Controller
     public function laporanBrg(Request $request){
         $startDate = date("Y-m-d", strtotime($request->input('startDate')));
         $endDate = date("Y-m-d", strtotime($request->input('endDate')));
+        $cabang = $request->input('cabang');
+        $role = $request->input('role');
+        if($role != 'admin'){
+            $where = "'=', $cabang";
+        }else{
+            $where = "'!=', ''";
+        }
         $lap = DB::table('tblpenjualan')
                 ->join('tblpelanggan', 'tblpenjualan.r_pelanggan', 'tblpelanggan.kdPelanggan')
                 ->select('tblpenjualan.*', 'tblpelanggan.nmPelanggan')
+                ->where('tblpenjualan.cabangPenjualan', $where)
                 ->whereBetween('tblpenjualan.tglPenjualan', [$startDate, $endDate])
                 ->get();
         return response()->json([
