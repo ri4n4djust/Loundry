@@ -17,7 +17,7 @@ class penjualanController extends Controller
                 $editid = $request->input('editid');
                 // array key 0 = Header
                 // array kkey 1 = Detail
-                $tglNota = $request->input(0)['tglNota'];
+                $tglNota = $request[0]['tglNota'];
                 $noNota = $request[0]['noNota'];
                 $total =  $request[0]['total'];
                 $diskon = 0; // $total * $request[0]['disc'] / 100;
