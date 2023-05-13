@@ -17,9 +17,9 @@ class penjualanController extends Controller
                 $editid = $request->input('editid');
                 // array key 0 = Header
                 // array kkey 1 = Detail
-                $tglNota = $request->input('postData')['tglNota'];
-                $noNota = $request['postData']['noNota'];
-                $total =  $request['postData']['total'];
+                $tglNota = $request->input(0)['tglNota'];
+                $noNota = $request[0]['noNota'];
+                $total =  $request[0]['total'];
                 $diskon = 0; // $total * $request[0]['disc'] / 100;
                 $pph22 = 10 ; //$detop[0]['pph22'];
                 $type = 1; // $request[0]['term'];
@@ -29,43 +29,43 @@ class penjualanController extends Controller
                 // }
                 
                 $post = DB::table('tblpenjualan')->upsert([
-                    'noPenjualan'     => $request['postData']['noNota'],
-                    'r_pelanggan'     => $request['postData']['kdPelanggan'],
-                    'subTotalPenjualan'     => $request['postData']['subtotal'],
+                    'noPenjualan'     => $request[0]['noNota'],
+                    'r_pelanggan'     => $request[0]['kdPelanggan'],
+                    'subTotalPenjualan'     => $request[0]['subtotal'],
                     'tglPenjualan'   => $tglNota,
                     'discPenjualan'     => $diskon,
                     'discPercentP'     => 0, // $request[0]['disc'],
                     'taxPenjualan'     => 0, // $request[0]['tax'],
                     'totalPenjualan'     => 0, // $request[0]['total'],
-                    'notePenjualan'     => $request['postData']['notes'],
+                    'notePenjualan'     => $request[0]['notes'],
                     'termPenjualan'     => 1, // $request[0]['term'],
                     'jthTempo'     => $tglNota, // $request[0]['jthTempo'],
                     'typeBayar'     => 1, // $request[0]['term'],
                     'piutangPenjualan'     => $piutang,
-                    'cabangPenjualan' => $request['postData']['kode_cabang'],
+                    'cabangPenjualan' => $request[0]['kode_cabang'],
                     'created_at' => \Carbon\Carbon::now()->toDateTimeString(),
                     'updated_at' => \Carbon\Carbon::now()->toDateTimeString()
                 ],
                 [ 
-                    'r_pelanggan'     => $request['postData']['kdPelanggan'],
-                    'subTotalPenjualan'     => $request['postData']['subtotal'],
+                    'r_pelanggan'     => $request[0]['kdPelanggan'],
+                    'subTotalPenjualan'     => $request[0]['subtotal'],
                     'tglPenjualan'   => $tglNota,
                     'discPenjualan'     => $diskon,
                     'discPercentP'     => 0, // $request[0]['disc'],
                     'taxPenjualan'     => 0, // $request[0]['tax'],
                     'totalPenjualan'     => 0, // $request[0]['total'],
-                    'notePenjualan'     => $request['postData']['notes'],
+                    'notePenjualan'     => $request[0]['notes'],
                     'termPenjualan'     => 1, // $request[0]['term'],
                     'jthTempo'     => $tglNota, // $request[0]['jthTempo'],
                     'typeBayar'     => 1, // $request[0]['term'],
                     'piutangPenjualan'     => $piutang,
-                    'cabangPenjualan' => $request['postData']['kode_cabang'],
+                    'cabangPenjualan' => $request[0]['kode_cabang'],
                     'created_at' => \Carbon\Carbon::now()->toDateTimeString(),
                     'updated_at' => \Carbon\Carbon::now()->toDateTimeString()
                 ]
             );
                 PenjualanDetail::where('r_noPenjualan', $noNota)->delete();
-                $detpem = $request['detailOrder'];
+                $detpem = $request[1];
                 for ($i = 0; $i < count($detpem); $i++) {
 
                     // $kdBarang = $detpem[$i]['kdBarang'];
