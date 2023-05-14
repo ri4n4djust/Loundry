@@ -30,16 +30,17 @@ class laporanController extends Controller
         $cabang = $request->input('cabang');
         $role = $request->input('role');
         if($role != 'admin'){
-            $where = "'=', $cabang";
+            $where = "cabangPenjualan = '$cabang' AND";
         }else{
-            $where = "'!=', ''";
+            $where = "cabangPenjualan != '' AND";
         }
-        $lap = DB::table('tblpenjualan')
+        // $lap = DB::table('tblpenjualan')
                 // ->join('tblpelanggan', 'tblpenjualan.r_pelanggan', 'tblpelanggan.kdPelanggan')
-                ->select('tblpenjualan.*')
-                ->where('tblpenjualan.cabangPenjualan', $where)
-                ->whereBetween('tblpenjualan.tglPenjualan', [$startDate, $endDate])
-                ->get();
+                // ->select('tblpenjualan.*')
+                // ->where('tblpenjualan.cabangPenjualan', $where)
+                // ->whereBetween('tblpenjualan.tglPenjualan', [$startDate, $endDate])
+                // ->get();
+        $lap = DB::select("SELECT * FROM tblpenjualan WHERE $where tglPenjualan BETWEEN '$startDate' AND '$endDate';");
         return response()->json([
             'success' => true,
             'message' => 'Laporan Penjualan Barang',
