@@ -37,7 +37,7 @@ class laporanController extends Controller
         $lap = DB::table('tblpenjualan')
                 ->join('tblpelanggan', 'tblpenjualan.r_pelanggan', 'tblpelanggan.kdPelanggan')
                 ->select('tblpenjualan.*', 'tblpelanggan.nmPelanggan')
-                ->where('tblpenjualan.cabangPenjualan', $where)
+                // ->where('tblpenjualan.cabangPenjualan', $where)
                 ->whereBetween('tblpenjualan.tglPenjualan', [$startDate, $endDate])
                 ->get();
         return response()->json([
