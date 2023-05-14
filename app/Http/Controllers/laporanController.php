@@ -29,11 +29,10 @@ class laporanController extends Controller
         $endDate = date("Y-m-d", strtotime($request->input('endDate')));
         $cabang = $request->input('cabang');
         $role = $request->input('role');
-        if($role != 'admin'){
-            $where = "cabangPenjualan = '$cabang' AND";
-        }else{
+        $where = "cabangPenjualan = '$cabang' AND";
+        if($role == 'admin'){
             $where = "cabangPenjualan != '' AND";
-        }
+        };
         // $lap = DB::table('tblpenjualan')
                 // ->join('tblpelanggan', 'tblpenjualan.r_pelanggan', 'tblpelanggan.kdPelanggan')
                 // ->select('tblpenjualan.*')
