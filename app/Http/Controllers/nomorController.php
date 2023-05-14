@@ -39,7 +39,7 @@ class nomorController extends Controller
         }else{
             $no = 0 ;
             $count = Penjualan::all()->last();
-            $terakhir = substr($count->noPenjualan, 11);
+            $terakhir = substr($count->noPenjualan, 10);
             // echo $terakhir;
             $kodeBaru = $terakhir + 1  ;
 
