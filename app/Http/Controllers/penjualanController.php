@@ -307,10 +307,11 @@ class penjualanController extends Controller
 
         $header = DB::table('tblpenjualan')->where('noPenjualan', $noPenjualan)->get();
         $data = PenjualanDetail::where('r_noPenjualan', $noPenjualan)->get();
+        $combined = array_merge($header, $data);
         return response()->json([
             'success' => true,
             'message' => 'Detail Penjualan!',
-            'data' => [$header,$data]
+            'data' => $combined
         ], 200);
     }
 }
