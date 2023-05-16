@@ -305,7 +305,7 @@ class penjualanController extends Controller
     public function getDetailPenjualan(Request $request){
         $noPenjualan = $request->input('kd');
 
-        $header = DB::table('tblpenjualan')->where('noPenjualan', $noPenjualan)->get();
+        $header = DB::table('tblpenjualan')->where('noPenjualan', $noPenjualan)->first();
         $data = PenjualanDetail::where('r_noPenjualan', $noPenjualan)->get();
         $combined = array_merge($header, $data);
         return response()->json([
