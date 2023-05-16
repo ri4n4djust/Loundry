@@ -305,11 +305,12 @@ class penjualanController extends Controller
     public function getDetailPenjualan(Request $request){
         $noPenjualan = $request->input('kd');
 
+        $header = Penjualan::where('noPenjualan', $noPenjualan)->get();
         $data = PenjualanDetail::where('r_noPenjualan', $noPenjualan)->get();
         return response()->json([
             'success' => true,
             'message' => 'Detail Penjualan!',
-            'data' => $data
+            'data' => [$header,$data]
         ], 200);
     }
 }
