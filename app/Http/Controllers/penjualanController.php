@@ -307,12 +307,13 @@ class penjualanController extends Controller
 
         $header = DB::table('tblpenjualan')->where('noPenjualan', $noPenjualan)->first();
         $data = PenjualanDetail::where('r_noPenjualan', $noPenjualan)->get();
-        $array = json_decode(json_encode($data), true);
-        $combined = array_merge($header, $array);
-        return response()->json([
-            'success' => true,
-            'message' => 'Detail Penjualan!',
-            'data' => $combined
-        ], 200);
+        print_r($header)
+        // $array = json_decode(json_encode($data), true);
+        // $combined = array_merge($header, $array);
+        // return response()->json([
+        //     'success' => true,
+        //     'message' => 'Detail Penjualan!',
+        //     'data' => $combined
+        // ], 200);
     }
 }
