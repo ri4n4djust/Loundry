@@ -322,7 +322,7 @@ class penjualanController extends Controller
                 ->join('tblpelanggan', 'tblpenjualan.r_pelanggan', 'tblpelanggan.kdPelanggan')
                 ->where('tblpenjualan.noPenjualan', $noPenjualan)
                 ->select('tblpenjualan.*', 'tblpelanggan.nmPelanggan')
-                ->get();
+                ->first();
         $detail = PenjualanDetail::where('r_noPenjualan', $noPenjualan)->get();
         // $array = json_decode(json_encode($data), true);
         // $combined = array_merge($header, $array);
