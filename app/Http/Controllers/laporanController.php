@@ -34,13 +34,13 @@ class laporanController extends Controller
         }else{
             $where = "cabangPenjualan != '' AND";
         }
-        // $lap = DB::table('tblpenjualan')
-                // ->join('tblpelanggan', 'tblpenjualan.r_pelanggan', 'tblpelanggan.kdPelanggan')
-                // ->select('tblpenjualan.*')
-                // ->where('tblpenjualan.cabangPenjualan', $where)
-                // ->whereBetween('tblpenjualan.tglPenjualan', [$startDate, $endDate])
-                // ->get();
-        $lap = DB::select("SELECT * FROM tblpenjualan WHERE $where tglPenjualan BETWEEN '$startDate' AND '$endDate';");
+        $lap = DB::table('tblpenjualan')
+                ->join('tblpelanggan', 'tblpenjualan.r_pelanggan', 'tblpelanggan.kdPelanggan')
+                ->select('tblpenjualan.*')
+                ->where('tblpenjualan.cabangPenjualan', $where)
+                ->whereBetween('tblpenjualan.tglPenjualan', [$startDate, $endDate])
+                ->get();
+        // $lap = DB::select("SELECT * FROM tblpenjualan WHERE $where tglPenjualan BETWEEN '$startDate' AND '$endDate';");
         return response()->json([
             'success' => true,
             'message' => 'Laporan Penjualan Barang',
