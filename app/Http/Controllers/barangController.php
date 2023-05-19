@@ -27,9 +27,10 @@ class barangController extends Controller
         ], 200);
     }
 
-    public function indexPricelist()
+    public function indexPricelist(Request $request)
     {
-        $posts = DB::table('tblpricelist')->get();
+        $filter = $request->input('cabang');
+        $posts = DB::table('tblpricelist')->where('r_cabang', $filter)->get();
         return response([
             'success' => true,
             'message' => 'List Semua Harga',
