@@ -24,6 +24,19 @@ class penjualanController extends Controller
                 $diskon = 0; // $total * $request[0]['disc'] / 100;
                 $pph22 = 10 ; //$detop[0]['pph22'];
                 $type = 1; // $request[0]['term'];
+                $r_pelanggan = $request[0]['kdPelanggan'];
+                $nm_pelanggan = $request[0]['nmPelanggan'];
+                $plg = DB::table('tblpelanggan')->where('kdPelanggan', $r_pelanggan)->first();
+                if(empty($plg)){
+                    DB::table('tblpelanggan')->insert([
+                        'kdPelanggan' => $r_pelanggan,
+                        'nmPelanggan' => $nm_pelanggan,
+                        'almtPelanggan' => 'alamat',
+                        'noHpPelanggan' => $r_pelanggan,
+                        'created_at' => \Carbon\Carbon::now()->toDateTimeString(),
+                        'updated_at' => \Carbon\Carbon::now()->toDateTimeString()
+                    ]);
+                }
                 $piutang = 0;
                 // if($type == '1'){
                 //     $piutang = $total;
@@ -305,7 +318,11 @@ class penjualanController extends Controller
     public function getDetailPenjualan(Request $request){
         $noPenjualan = $request->input('kd');
 
-        $header = DB::table('tblpenjualan')->where('noPenjualan', $noPenjualan)->first();
+        $header = DB::table('tblpenjualan')
+                ->join('tblpelanggan', 'tblpenjualan.r_pelanggan', 'tblpelanggan.kdPelanggan')
+                ->where('tblpenjualan.noPenjualan', $noPenjualan)
+                ->select('tblpenjualan.*', 'tblpelanggan.nmPelanggan')
+                ->first();
         $detail = PenjualanDetail::where('r_noPenjualan', $noPenjualan)->get();
         // $array = json_decode(json_encode($data), true);
         // $combined = array_merge($header, $array);
